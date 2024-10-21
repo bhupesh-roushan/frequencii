@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "image": "product1.jpg",
+      "name": "Wireless Earbuds",
+      "price": "2,999",
+      "stars": 4.5
+    },
+    {
+      "id": 2,
+      "image": "product2.jpg",
+      "name": "Smart Watch",
+      "price": "4,599",
+      "stars": 4.2
+    },
+    {
+      "id": 3,
+      "image": "product3.jpg",
+      "name": "Bluetooth Speaker",
+      "price": "1,899",
+      "stars": 4.0
+    },
+    {
+      "id": 4,
+      "image": "product4.jpg",
+      "name": "Gaming Mouse",
+      "price": "1,199",
+      "stars": 4.3
+    },
+    {
+      "id": 5,
+      "image": "product5.jpg",
+      "name": "Portable Charger",
+      "price": "999",
+      "stars": 4.1
+    },
+    {
+      "id": 6,
+      "image": "product6.jpg",
+      "name": "Fitness Tracker",
+      "price": "3,499",
+      "stars": 4.7
+    },
+    {
+      "id": 7,
+      "image": "product7.jpg",
+      "name": "Table Clock",
+      "price": "899",
+      "stars": 4.0
+    },
+    {
+      "id": 8,
+      "image": "product8.jpg",
+      "name": "T-shirt",
+      "price": "1,499",
+      "stars": 4.4
+    },
+    {
+      "id": 9,
+      "image": "product9.jpg",
+      "name": "Wireless Keyboard",
+      "price": "2,299",
+      "stars": 4.6
+    },
+    {
+      "id": 10,
+      "image": "product10.jpg",
+      "name": "Jeans",
+      "price": "5,199",
+      "stars": 4.8
+    }
+  ]
+  
