@@ -14,6 +14,7 @@ import {
 
 import { Separator } from "../components/ui/separator";
 import Newsletter from "../components/NewsLetter";
+import frequencii2 from "../assets/images/frequencii.svg"
 
 // Map icons based on link name
 const getIcon = (name) => {
@@ -78,7 +79,7 @@ const Footer = () => {
     <div className="flex flex-col m-5">
       {/* Logo */}
       <div className="flex flex-col gap-3 justify-center items-center md:justify-start mt-14">
-        <img src="public/Flora&Fauna.svg" alt="logo" className="w-24" />
+        <img src={frequencii2} alt="logo" className="w-24" />
         <p className="text-sm">Find Your Perfect Frequency</p>
       </div>
 

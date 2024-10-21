@@ -9,6 +9,9 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import { setSearchTerm } from "../redux/ProductSlice";
 
+import frequencii from "../assets/images/frequencii.svg"
+
+
 const Navbar = () => {
   const[isModalOpen,setIsModalOpen]=useState(false)
   const[isLogin,setIsLogin]=useState(true)
@@ -40,7 +43,7 @@ const Navbar = () => {
           <Link to="/">
             <img
               className=" hover:scale-105 transition-all ease-in delay-120 min-w-[50px] w-[70px] mr-5 ml-5 sm:w-[80px] md:w-[90px] lg:w-[100px] xl:w-[150px] "
-              src="public/Flora&Fauna.svg"
+              src={frequencii}
               alt="Flora & Fauna"
             />
           </Link>
