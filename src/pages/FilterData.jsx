@@ -2,7 +2,7 @@ import TopProductCard from "../components/Productcard/TopProductCard";
 import React from "react";
 import { useSelector } from "react-redux";
 
-import notFound from "../assets/images/notFound.jpg";
+import notFound from "../assets/images/notfound.jpg";
 
 const FilterData = () => {
   const filterProdcuts = useSelector((state) => state.product.filterData);
