@@ -84,7 +84,6 @@ const Home = () => {
               {images.map((image, index) => (
                 <CarouselItem key={index}>
                   <img
-                    rel="preload"
                     src={image}
                     className="w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[400px] xl:max-h-[600px] object-fill rounded-lg transition-all duration-300"
                   />
