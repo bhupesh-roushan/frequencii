@@ -35,7 +35,7 @@ const CategoryCard = () => {
               key={index}
               className="rounded-lg shadow-lg min-w-[100px] shadow-blue-200 cursor-pointer hover:scale-105 transition-all ease-in-out delay-120"
             >
-              <img src={imageUrl} alt="" className="min-w-[100px] h-full rounded-lg" />
+              <img rel="preload" src={imageUrl} alt="" className="min-w-[100px] h-full rounded-lg" />
             </div>
           ))}
         </div>
@@ -54,6 +54,7 @@ const CategoryCard = () => {
               className="rounded-lg shadow-lg shadow-blue-200 cursor-pointer hover:scale-105 transition-all ease-in-out delay-120"
             >
               <img
+                rel="preload"
                 src={imageUrl}
                 alt=""
                 className="rounded-lg overflow-hidden h-full"
@@ -76,6 +77,7 @@ const CategoryCard = () => {
               className="rounded-lg shadow-lg shadow-blue-200 cursor-pointer hover:scale-105 transition-all ease-in-out delay-120"
             >
               <img
+                rel="preload"
                 src={imageUrl}
                 alt=""
                 className="rounded-lg overflow-hidden h-full"
@@ -98,6 +100,7 @@ const CategoryCard = () => {
               className="rounded-lg shadow-lg shadow-blue-200 cursor-pointer hover:scale-105 transition-all ease-in-out delay-120"
             >
               <img
+                rel="preload"
                 src={imageUrl}
                 alt=""
                 className="rounded-lg overflow-hidden h-full"
@@ -120,6 +123,7 @@ const CategoryCard = () => {
               className="rounded-lg shadow-lg shadow-blue-200 cursor-pointer hover:scale-105 transition-all ease-in-out delay-120"
             >
               <img
+              rel="preload"
                 src={imageUrl}
                 alt=""
                 className="rounded-lg overflow-hidden h-full"
