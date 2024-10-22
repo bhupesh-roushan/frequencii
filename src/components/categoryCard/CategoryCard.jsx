@@ -33,9 +33,9 @@ const CategoryCard = () => {
           {images1.map((imageUrl, index) => (
             <div
               key={index}
-              className="rounded-lg shadow-lg shadow-blue-200 cursor-pointer hover:scale-105 transition-all ease-in-out delay-120"
+              className="rounded-lg shadow-lg min-w-[100px] shadow-blue-200 cursor-pointer hover:scale-105 transition-all ease-in-out delay-120"
             >
-              <img src={imageUrl} alt="" className="rounded-lg" />
+              <img src={imageUrl} alt="" className="min-w-[100px] h-full rounded-lg" />
             </div>
           ))}
         </div>

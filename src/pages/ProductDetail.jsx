@@ -64,7 +64,7 @@ const ProductDetail = () => {
             <img
               src={imageMap[product.image]}
               alt={product.name}
-              className=" min-w-[150px]  rounded-lg"
+              className=" min-w-[150px]  rounded-lg shadow-md shadow-blue-200"
               
             />
 
