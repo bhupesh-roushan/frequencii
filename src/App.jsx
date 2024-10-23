@@ -8,6 +8,10 @@ import { useState } from "react";
 import OrderConfirmation from "./pages/OrderConfirmation";
 import FilterData from "./pages/FilterData";
 import ProductDetail from "./pages/ProductDetail";
+import ContactPage from "./pages/ContactPage";
+import HelpPage from "./pages/HelpPage";
+import AdvertisePage from "./pages/AdvertisePage";
+import SalesPage from "./pages/SalesPage";
 function App() {
 
   const [order,setOrder]=useState(null)
@@ -26,6 +30,10 @@ function App() {
 
         <Route path="/filter-data" element={<FilterData/>}></Route>
         <Route path="/product/:id" element={<ProductDetail/>}></Route>
+        <Route path="/contact" element={<ContactPage/>}></Route>
+        <Route path="/help" element={<HelpPage/>}></Route>
+        <Route path="/advertise" element={<AdvertisePage/>}></Route>
+        <Route path="/sales" element={<SalesPage/>}></Route>
       </Routes>
       <Footer />
      

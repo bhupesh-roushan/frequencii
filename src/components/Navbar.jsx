@@ -42,22 +42,22 @@ const Navbar = () => {
         <div>
           <Link to="/">
             <img
-              className=" hover:scale-105 transition-all ease-in delay-120 min-w-[50px] w-[70px] mr-5 ml-5 sm:w-[80px] md:w-[90px] lg:w-[100px] xl:w-[150px] "
+              className=" hover:scale-105 transition-all ease-in delay-120 min-w-[50px] w-[60px]  mr-5 ml-5 sm:w-[80px] md:w-[90px] lg:w-[100px]"
               src={frequencii}
               alt="Flora & Fauna"
             />
           </Link>
         </div>
-        <div className="container mx-auto px-2 md:px-4 lg:px-5 py-4 flex justify-between items-center">
+        <div className="container mx-auto  px-1 md:px-4 lg:px-5 py-4 flex justify-between items-center">
           {/* Search bar */}
           <div className="relative flex-1 mx-4">
             <form className="flex flex-row justify-center items-center gap-5" onSubmit={handleSearch}>
               <Input
                 placeholder="Search"
-                className="w-full min-w-24 py-2 px-2 shadow-sm shadow-blue-200 hover:shadow-blue-200 delay-120 transition-all ease-in focus:outline-none rounded-lg ring-0 border-0 focus-visible:ring-offset-0 focus-visible:ring-0"
+                className="w-full min-w-24 py-2 px-2 shadow-sm shadow-blue-200 hover:shadow-blue-200 delay-120 transition-all ease-in focus:outline-none rounded-lg ring-0 border-0 focus-visible:ring-offset-0 focus-visible:ring-0 text-sm"
                 onChange={(e)=>setSearch(e.target.value)}
               />
-              <FaSearch className="absolute text-xl top-3 right-3 hover:scale-125 hover:text-gray-600 transition-all delay-120 ease-in text-gray-500 " />
+              <FaSearch className="absolute text-sm sm:text-lg top-3 right-3 hover:scale-125 hover:text-gray-600 transition-all delay-120 ease-in text-gray-500 " />
             </form>
           </div>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
             </Link> */}
             <Link to="/cart">
               <div className="relative">
-                <FaShoppingCart className="text-3xl text-gray-600 hover:scale-105 transition-all delay-120 ease-in" />
+                <FaShoppingCart className=" text-xl sm:text-3xl text-gray-600 hover:scale-105 transition-all delay-120 ease-in" />
                 {products.length > 0 && (
                   <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full px-1">
                     {products.length}
@@ -89,7 +89,7 @@ const Navbar = () => {
             </Button>
             <Button
               variant="outline"
-              className="block md:hidden  hover:bg-gray-800 text-gray-700 hover:text-white transition-all ease-in delay-110 hover:scale-105"
+              className="block md:hidden mr-2 hover:bg-gray-800 text-gray-700 hover:text-white transition-all ease-in delay-110 hover:scale-105"
               onClick={()=>setIsModalOpen(true)}
             >
               <FaUser />
@@ -98,33 +98,6 @@ const Navbar = () => {
         </div>
       </div>
       {/* links below  */}
-
-      {/* <div className="flex text-sm md:text-md lg:text-lg flex-row gap-10 justify-center items-center pb-3">
-        <Link
-          to="/"
-          className="hover:text-orange-500 transition-all delay-120 ease-in"
-        >
-          Home
-        </Link>
-        <Link
-          to="/"
-          className="hover:text-orange-500 transition-all delay-120 ease-in"
-        >
-          Shop
-        </Link>
-        <Link
-          to="/"
-          className="hover:text-orange-500 transition-all delay-120 ease-in"
-        >
-          Contact
-        </Link>
-        <Link
-          to="/"
-          className="hover:text-orange-500 transition-all delay-120 ease-in"
-        >
-          About
-        </Link>
-      </div> */}
 
 
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>

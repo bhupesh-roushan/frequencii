@@ -1,12 +1,4 @@
 import React, { useEffect } from "react";
-import { Categories } from "../assets/MockData";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../components/ui/select";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -14,15 +6,14 @@ import {
   CarouselItem,
 } from "../components/ui/carousel";
 
-import hero1 from "../assets/images/hero1.jpg";
-import hero2 from "../assets/images/hero2.jpg";
+
 import hero3 from "../assets/images/hero3.jpg";
 import hero4 from "../assets/images/hero4.jpg";
 import hero5 from "../assets/images/hero5.jpg";
 import InfoSection from "../components/featureCard/InfoSection";
 import "../App.css";
 import CategoryCard from "../components/categoryCard/CategoryCard";
-const images = [hero1, hero2, hero3, hero4, hero5];
+const images = [hero3, hero4, hero5];
 import topProducts from "../data/topProducts.json";
 
 // Redux
@@ -54,21 +45,7 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Select Category */}
-      <div className="w-full">
-        <Select>
-          <SelectTrigger className="w-full py-2 px-2 shadow-sm shadow-blue-200 hover:shadow-blue-300 delay-120 transition-all ease-in focus:outline-none focus:ring-0 border-0 rounded-lg">
-            <SelectValue placeholder="Select Category" />
-          </SelectTrigger>
-          <SelectContent>
-            {Categories.map((category, index) => (
-              <SelectItem key={index} value={category}>
-                {category}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
+
 
       {/* Image carousel section */}
       <div className="shadow-md shadow-blue-300 bg-blue-100 rounded-lg overflow-hidden">
@@ -76,7 +53,7 @@ const Home = () => {
           <Carousel
             plugins={[
               Autoplay({
-                delay: 5000,
+                delay: 2000,
               }),
             ]}
           >
@@ -85,7 +62,7 @@ const Home = () => {
                 <CarouselItem key={index}>
                   <img
                     src={image}
-                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[400px] xl:max-h-[600px] object-fill rounded-lg transition-all duration-300"
+                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px] object-fill rounded-lg transition-all duration-300"
                   />
                 </CarouselItem>
               ))}
@@ -102,14 +79,14 @@ const Home = () => {
 
       {/* Top Products Section in Carousel */}
       <div className="flex flex-col justify-center items-center gap-10 overflow-hidden shadow-md shadow-blue-200 rounded-lg pb-10">
-        <h1 className="gradient-title text-5xl font-bold">Top Products</h1>
+        <h1 className="gradient-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Top Products</h1>
         <Carousel
           plugins={[plugin.current]}
           className="w-full mr-10 p-10 "
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
         >
-          <div>
+          
           <CarouselContent className="flex space-x-4 gap-5">
             {products.products.map((product, index) => (
               <CarouselItem
@@ -120,7 +97,7 @@ const Home = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          </div>
+         
         </Carousel>
       </div>
     </div>

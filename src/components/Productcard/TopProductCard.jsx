@@ -40,16 +40,16 @@ const TopProductCard = ({ product }) => {
   }
   return (
     <Link to={`/product/${product.id}`}>
-    <Card className="shadow-sm shadow-blue-200 p-3 rounded-lg w-full flex flex-col  min-w-[250px] max-w-[250px] min-h-[360px] max-h-[360px] m-5 cursor-pointer">
+    <Card className="shadow-sm shadow-blue-200 p-3 rounded-lg w-full flex flex-col  min-w-[200px] max-w-[250px] min-h-[360px] max-h-[360px] m-5 cursor-pointer">
       <CardHeader>
-        <CardTitle>{product.name}</CardTitle>
+        <CardTitle className="text-xl sm:text-2xl  text-center">{product.name}</CardTitle>
       </CardHeader>
 
-      <CardContent className="flex-grow p-0 flex flex-col gap-3">
+      <CardContent className="flex-grow p-12 flex flex-col gap-3">
         <img
           src={imageMap[product.image]}
           alt={product.name}
-          className="w-full min-h-[150px] max-h-[150px] h-auto rounded-lg"
+          className="min-w-[100px] max-w-[400px] min-h-[100px] max-h-[150px] rounded-lg"
         />
       </CardContent>
       
@@ -59,7 +59,7 @@ const TopProductCard = ({ product }) => {
       </CardDescription>
 
       <CardFooter className="flex justify-center items-center mt-auto">
-        <Button variant="outline" className="w-full cursor-pointer"
+        <Button variant="outline" className=" sm:w-full cursor-pointer"
         onClick={(e)=>handleAddToCart(e,product)}
         >
           Add to Cart
