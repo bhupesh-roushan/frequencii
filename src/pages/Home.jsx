@@ -26,7 +26,7 @@ const Home = () => {
   const products = useSelector((state) => state.product);
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000})
   );
 
   useEffect(() => {
@@ -87,11 +87,11 @@ const Home = () => {
           onMouseLeave={plugin.current.reset}
         >
           
-          <CarouselContent className="flex space-x-4 gap-5">
+          <CarouselContent className="flex space-x-4 gap-5 mb-5">
             {products.products.map((product, index) => (
               <CarouselItem
                 key={index}
-                className="basis-1/1 sm:basis-1/2 md:basis-1/2 lg:basis-1/4"
+                className="basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
               >
                 <TopProductCard product={product} />
               </CarouselItem>
