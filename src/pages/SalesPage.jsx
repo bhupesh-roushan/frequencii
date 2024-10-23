@@ -70,45 +70,22 @@ function SalesPage() {
           </CardContent>
         </Card>
       </div>
-
-      {/* Top Deals Section */}
-      {/* <div className="shadow-md shadow-blue-200 p-10 rounded-lg">
+      <div className="shadow-md shadow-blue-200 p-2 rounded-lg max-w-full overflow-hidden">
         <h2 className="text-3xl font-bold text-center mb-8">
           Top Deals of the Week
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {products.products.slice(2, 7).map((product, index) => (
-            <div key={index} className="w-full sm:w-auto">
+            <div key={index} className="w-full max-w-full">
               <TopProductCard
                 product={product}
-                className="p-1 sm:p-6 md:p-8" // Adjust padding based on screen size
+                className="p-4" // Standard padding
               />
             </div>
           ))}
         </div>
-      </div> */}
-
-
-
-<div className="shadow-md shadow-blue-200 p-2 rounded-lg max-w-full overflow-hidden">
-  <h2 className="text-3xl font-bold text-center mb-8">
-    Top Deals of the Week
-  </h2>
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-    {products.products.slice(2, 7).map((product, index) => (
-      <div key={index} className="w-full max-w-full">
-        <TopProductCard
-          product={product}
-          className="p-4" // Standard padding
-        />
       </div>
-    ))}
-  </div>
-</div>
-
-
-
     </div>
   );
 }
