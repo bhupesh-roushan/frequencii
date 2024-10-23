@@ -13,7 +13,6 @@ import {
 import { Separator } from "../components/ui/separator";
 import Newsletter from "../components/NewsLetter";
 import frequencii from "../assets/images/frequencii.svg";
-import frequencii2 from "../assets/images/frequencii2.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -1,9 +1,9 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Textarea } from '../components/ui/textarea';
 import React from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaGithub, FaLinkedin, FaVoicemail } from 'react-icons/fa';
+import { FaPhoneAlt,  FaMapMarkerAlt, FaInstagram, FaGithub, FaLinkedin} from 'react-icons/fa';
 
 
 function ContactPage() {

@@ -5,13 +5,13 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+} from "../components/ui/card";
+import { Button } from "../components/ui/button";
 import { FaPercentage, FaTag } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { setProducts } from "@/redux/ProductSlice";
+import { setProducts } from "../redux/ProductSlice";
 import topProducts from "../data/topProducts.json";
-import TopProductCard from "@/components/Productcard/TopProductCard";
+import TopProductCard from "../components/Productcard/TopProductCard";
 
 function SalesPage() {
   const dispatch = useDispatch();
