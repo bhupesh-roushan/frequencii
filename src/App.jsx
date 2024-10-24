@@ -12,15 +12,7 @@ import ContactPage from "./pages/ContactPage";
 import HelpPage from "./pages/HelpPage";
 import AdvertisePage from "./pages/AdvertisePage";
 import SalesPage from "./pages/SalesPage";
-import Men from "./categoryPages/Men";
-import Women from "./categoryPages/Women";
-import Kids from "./categoryPages/Kids";
-import Bodycare from "./categoryPages/Bodycare";
-import HairCare from "./categoryPages/HairCare";
-import Deodrants from "./categoryPages/Deodrants";
-import Mobiles from "./categoryPages/Mobiles";
-import Laptops from "./categoryPages/Laptops";
-import HomeGoods from "./categoryPages/HomeGoods";
+
 function App() {
   const [order, setOrder] = useState(null);
   return (
@@ -44,18 +36,8 @@ function App() {
         <Route path="/advertise" element={<AdvertisePage />}></Route>
         <Route path="/sales" element={<SalesPage />}></Route>
         <Route path="/" element={<Home />} />
-        
-        <Route path="/fashion/men" element={<Men />} />
-        <Route path="/fashion/women" element={<Women />} />
-        <Route path="/fashion/kids" element={<Kids />} />
-
-        <Route path="/electronics/mobiles" element={<Mobiles />} />
-        <Route path="/electronics/laptops" element={<Laptops />} />
-        <Route path="/electronics/home-goods" element={<HomeGoods />} />
-
-        <Route path="/beauty/bodycare" element={<Bodycare />} />
-        <Route path="/beauty/haircare" element={<HairCare />} />
-        <Route path="/beauty/deodrants" element={<Deodrants />} />
+        <Route path="/filter-data" element={<FilterData />} />
+      
 
       </Routes>
 

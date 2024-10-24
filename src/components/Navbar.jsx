@@ -8,9 +8,7 @@ import Modal from "./Modal";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import { setSearchTerm } from "../redux/ProductSlice";
-
 import frequencii from "../assets/images/frequencii.svg"
-
 
 const Navbar = () => {
   const[isModalOpen,setIsModalOpen]=useState(false)
@@ -21,8 +19,8 @@ const Navbar = () => {
 
   const handleSearch=(e)=>{
     e.preventDefault()
-    dispatch(setSearchTerm(search))
-    navigate("")
+    dispatch(setSearchTerm(search)) 
+    navigate("/filter-data")
   }
 
   const openSignUpForm=()=>{

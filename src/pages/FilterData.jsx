@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import notFound from "../assets/images/notfound.jpg";
 
 const FilterData = () => {
-  const filterProdcuts = useSelector((state) => state.product.filterData);
+  const filterProdcuts = useSelector((state) => state.product.filteredData);
   return (
     <div className="mx-auto py-12 px-4 md:px-16 lg:px-24">
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center gradient-title">Search Results</h2>

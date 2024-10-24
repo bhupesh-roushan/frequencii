@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   products: [],
   searchTerm:"",
-  filterData:[]
+  filteredData:[]
 };
 
 const ProductSlice = createSlice({
@@ -15,7 +15,7 @@ const ProductSlice = createSlice({
     },
     setSearchTerm(state,action){
       state.searchTerm=action.payload
-      state.filterData=state.products.filter(product=>product.name.toLowerCase().includes(state.searchTerm.toLocaleLowerCase()))
+      state.filteredData=state.products.filter(product=>product.name.toLowerCase().includes(state.searchTerm.toLowerCase()))
     }
   },
 });
