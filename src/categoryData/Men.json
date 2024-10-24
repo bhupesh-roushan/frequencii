@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Men's Jacket",
+      "price": 79.99,
+      "image": "/images/mens-jacket.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Men's T-shirt",
+      "price": 29.99,
+      "image": "/images/mens-tshirt.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Men's Sneakers",
+      "price": 99.99,
+      "image": "/images/mens-sneakers.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Men's Jeans",
+      "price": 49.99,
+      "image": "/images/mens-jeans.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Men's Watch",
+      "price": 199.99,
+      "image": "/images/mens-watch.jpg"
+    }
+  ]
+  

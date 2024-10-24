@@ -22,11 +22,11 @@ const Footer = () => {
 
       <div className="flex  flex-col md:flex-row justify-center items-center md:justify-around  ">
         <div className="flex flex-col gap-2 justify-center items-center mr-2">
-          <img className="w-28" src={frequencii} alt="" />
+          <img className=" w-24 sm:w-28 md:w-36 " src={frequencii} alt="" />
           <p className="text-sm">Find Your Perfect Frequency</p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-3 text-sm sm:text-md sm:gap-20 mt-5">
+        <div className="flex flex-col sm:flex-row gap-3 text-sm sm:text-lg sm:gap-20 mt-5">
           <div>
             <h1 className="font-semibold text-gray-700" >Quick Links</h1>
             <ul className="mt-2 flex flex-col gap-2">

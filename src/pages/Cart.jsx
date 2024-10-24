@@ -53,7 +53,7 @@ const Cart = () => {
           <div className="flex flex-col md:flex-row justify-between space-x-10 mt-8">
             <div className="md:w-2/3 mb-10">
               <div className="flex justify-between border-b items-center mb-4 text-xs font-bold">
-                <p>Products</p>
+                <p className="mb-2">Products</p>
                 <div className="flex space-x-8">
                   <p>Price</p>
                   <p>Quantity</p>
