@@ -4,7 +4,6 @@ import { Button } from "./ui/button";
 
 const ChangeAddress = ({ setAddress, setIsModalOpen }) => {
   const [newAddress, setNewAddress] = useState("");
-
   const onClose = () => {
     if (newAddress.trim()) {
       setAddress(newAddress); // Set the new address

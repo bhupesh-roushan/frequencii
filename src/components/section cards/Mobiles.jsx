@@ -8,19 +8,13 @@ import {
   CardFooter,
 } from "../../components/ui/card";
 
-import mobiles from "../../data/mobiles.json"
-
+import mobiles from "../../data/mobiles.json";
 import { Button } from "../../components/ui/button";
-
-
-// ... import all other images
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setMobilesProducts } from "@/redux/MobilesProductSlice";
-
-// Map the images to use dynamically
-import imageMap from "@/pages/imageMap";
+import { addToCart } from "../../redux/CartSlice";
+import { setMobilesProducts } from "../../redux/MobilesProductSlice";
+import imageMap from "../../pages/imageMap";
 
 function Mobiles() {
   const dispatch = useDispatch();
@@ -44,7 +38,11 @@ function Mobiles() {
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {mobiles.map((product) => (
-          <Link to={`/mobiles/product/${product.id}`} key={product.id} className="w-full h-full">
+          <Link
+            to={`/mobiles/product/${product.id}`}
+            key={product.id}
+            className="w-full h-full"
+          >
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img

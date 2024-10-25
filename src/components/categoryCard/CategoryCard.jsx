@@ -1,36 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import categoryimg1 from "../../assets/images/category1.jpg";
-import categoryimg2 from "../../assets/images/category2.jpg";
-import categoryimg3 from "../../assets/images/category3.jpg";
-import electronics1 from "../../assets/images/electronics1.jpg";
-import electronics2 from "../../assets/images/electronics2.jpg";
-import electronics3 from "../../assets/images/electronics3.jpg";
-import beauty1 from "../../assets/images/beauty1.jpg";
-import beauty2 from "../../assets/images/beauty2.jpg";
-import beauty3 from "../../assets/images/beauty3.jpg";
-
-const images1 = [
-  { url: categoryimg1, link: "/fashion/men" },
-  { url: categoryimg2, link: "/fashion/women" },
-  { url: categoryimg3, link: "/fashion/kids" }
-];
-const images2 = [
-  { url: electronics1, link: "/electronics/mobiles" },
-  { url: electronics2, link: "/electronics/laptops" },
-  { url: electronics3, link: "/electronics/homeGoods" }
-];
-const images4 = [
-  { url: beauty1, link: "/beauty/bodyCare" },
-  { url: beauty2, link: "/beauty/hairCare" },
-  { url: beauty3, link: "/beauty/deodrants" }
-];
-
+import { images1, images2, images4 } from "../../components/categoryCard/categoryImages";
 
 const CategoryCard = () => {
   return (
     <div className="flex flex-col gap-20">
-      {/* fashion */}
+      {/* Fashion */}
       <div className="shadow-sm shadow-blue-200 p-10 rounded-lg">
         <h1 className="text-xl sm:text-2xl md:text-4xl font-bold gradient-title text-center mt-5 mb-10">
           Fashion
@@ -46,7 +21,7 @@ const CategoryCard = () => {
         </div>
       </div>
 
-      {/* electronics */}
+      {/* Electronics */}
       <div className="shadow-sm shadow-blue-200 p-10 rounded-lg">
         <h1 className="text-xl sm:text-2xl md:text-4xl font-bold gradient-title text-center mt-5 mb-10">
           Electronics
@@ -61,7 +36,6 @@ const CategoryCard = () => {
           ))}
         </div>
       </div>
-
 
       {/* Beauty */}
       <div className="shadow-sm shadow-blue-200 p-10 rounded-lg">
@@ -78,8 +52,6 @@ const CategoryCard = () => {
           ))}
         </div>
       </div>
-
-      {/* Sports */}
     </div>
   );
 };

@@ -56,7 +56,7 @@ const Cart = () => {
                       </div>
                     </div>
                     <div className="flex space-x-8 items-center">
-                      <p>{products.price} </p>
+                      <p>{products.price} ₹ </p>
                       <div className="flex items-center justify-center border">
                         <button
                           className="text-xl font-bold px-1.5 border-r"

@@ -9,17 +9,12 @@ import {
 } from "../ui/card";
 
 import deodrants from "../../data/deodrants.json";
-
 import { Button } from "../ui/button";
-
-import imageMap from "@/pages/imageMap";
-// ... import all other images
+import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setDeodrantsProducts } from "@/redux/DeodrantsProductSlice";
-
-// Map the images to use dynamically
+import { addToCart } from "../../redux/CartSlice";
+import { setDeodrantsProducts } from "../../redux/DeodrantsProductSlice";
 
 function Deodrants() {
   const dispatch = useDispatch();

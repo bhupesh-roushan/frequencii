@@ -1,157 +1,156 @@
 [
-    {
-      "id": 1,
-      "image": "women1.jpg",
-      "name": "Blue Jeans",
-      "price": "1499",
-      "stars": 4.5
-    },
-    {
-      "id": 2,
-      "image": "women2.jpg",
-      "name": "Floral Top",
-      "price": "899",
-      "stars": 4.2
-    },
-    {
-      "id": 3,
-      "image": "women3.jpg",
-      "name": "Printed T-Shirt",
-      "price": "699",
-      "stars": 4.6
-    },
-    {
-      "id": 4,
-      "image": "women4.jpg",
-      "name": "Casual Floral Top",
-      "price": "599",
-      "stars": 4.8
-    },
-    {
-      "id": 5,
-      "image": "women5.jpg",
-      "name": "Black Heels",
-      "price": "1299",
-      "stars": 4.3
-    },
-    {
-      "id": 6,
-      "image": "women6.jpg",
-      "name": "White Heels",
-      "price": "1199",
-      "stars": 4.5
-    },
-    {
-      "id": 7,
-      "image": "women7.jpg",
-      "name": "Grey Floral Dress",
-      "price": "2199",
-      "stars": 4.7
-    },
-    {
-      "id": 8,
-      "image": "women8.jpg",
-      "name": "White&Blue Dress",
-      "price": "1899",
-      "stars": 4.4
-    },
-    {
-      "id": 9,
-      "image": "women9.jpg",
-      "name": "Casual Hoodie",
-      "price": "1799",
-      "stars": 4.1
-    },
-    {
-      "id": 10,
-      "image": "women10.jpg",
-      "name": "Casual Bomber Jacket",
-      "price": "2999",
-      "stars": 4.6
-    },
-    {
-      "id": 11,
-      "image": "women11.jpg",
-      "name": "Leather Jacket",
-      "price": "4799",
-      "stars": 4.3
-    },
-    {
-      "id": 12,
-      "image": "women12.jpg",
-      "name": "Sports Shoe",
-      "price": "2499",
-      "stars": 4.2
-    },
-    {
-      "id": 13,
-      "image": "women13.jpg",
-      "name": "Casual Shoe",
-      "price": "2299",
-      "stars": 4.4
-    },
-    {
-      "id": 14,
-      "image": "women14.jpg",
-      "name": "Leather Boot",
-      "price": "3499",
-      "stars": 4.5
-    },
-    {
-      "id": 15,
-      "image": "women15.jpg",
-      "name": "Casual Flip Flop",
-      "price": "599",
-      "stars": 4.6
-    },
-    {
-      "id": 16,
-      "image": "women16.jpg",
-      "name": "Slipper",
-      "price": "499",
-      "stars": 4.7
-    },
-    {
-      "id": 17,
-      "image": "women17.jpg",
-      "name": "Casual Slide",
-      "price": "899",
-      "stars": 4.3
-    },
-    {
-      "id": 18,
-      "image": "women18.jpg",
-      "name": "Blue Crop Top",
-      "price": "599",
-      "stars": 4.5
-    },
-    {
-      "id": 19,
-      "image": "women19.jpg",
-      "name": "Pink T-Shirt",
-      "price": "599",
-      "stars": 4.2
-    },
-    {
-      "id": 20,
-      "image": "women20.jpg",
-      "name": "Lime T-Shirt",
-      "price": "599",
-      "stars": 4.4
-    },
-    {
-      "id": 21,
-      "image": "women21.jpg",
-      "name": "Red Crop Top",
-      "price": "799",
-      "stars": 4.6
-    },
-    {
-      "id": 22,
-      "image": "women22.jpg",
-      "name": "Green T-Shirt",
-      "price": "599",
-      "stars": 4.3
-    }
-  ]
-  
+  {
+    "id": 1,
+    "image": "women1.jpg",
+    "name": "Blue Jeans",
+    "price": "1499",
+    "stars": 4.5
+  },
+  {
+    "id": 2,
+    "image": "women2.jpg",
+    "name": "Floral Top",
+    "price": "899",
+    "stars": 4.2
+  },
+  {
+    "id": 3,
+    "image": "women3.jpg",
+    "name": "Printed T-Shirt",
+    "price": "699",
+    "stars": 4.6
+  },
+  {
+    "id": 4,
+    "image": "women4.jpg",
+    "name": "Casual Floral Top",
+    "price": "599",
+    "stars": 4.8
+  },
+  {
+    "id": 5,
+    "image": "women5.jpg",
+    "name": "Black Heels",
+    "price": "1299",
+    "stars": 4.3
+  },
+  {
+    "id": 6,
+    "image": "women6.jpg",
+    "name": "White Heels",
+    "price": "1199",
+    "stars": 4.5
+  },
+  {
+    "id": 7,
+    "image": "women7.jpg",
+    "name": "Grey Floral Dress",
+    "price": "2199",
+    "stars": 4.7
+  },
+  {
+    "id": 8,
+    "image": "women8.jpg",
+    "name": "White&Blue Dress",
+    "price": "1899",
+    "stars": 4.4
+  },
+  {
+    "id": 9,
+    "image": "women9.jpg",
+    "name": "Casual Hoodie",
+    "price": "1799",
+    "stars": 4.1
+  },
+  {
+    "id": 10,
+    "image": "women10.jpg",
+    "name": "Casual Bomber Jacket",
+    "price": "2999",
+    "stars": 4.6
+  },
+  {
+    "id": 11,
+    "image": "women11.jpg",
+    "name": "Leather Jacket",
+    "price": "4799",
+    "stars": 4.3
+  },
+  {
+    "id": 12,
+    "image": "women12.jpg",
+    "name": "Sports Shoe",
+    "price": "2499",
+    "stars": 4.2
+  },
+  {
+    "id": 13,
+    "image": "women13.jpg",
+    "name": "Casual Shoe",
+    "price": "2299",
+    "stars": 4.4
+  },
+  {
+    "id": 14,
+    "image": "women14.jpg",
+    "name": "Leather Boot",
+    "price": "3499",
+    "stars": 4.5
+  },
+  {
+    "id": 15,
+    "image": "women15.jpg",
+    "name": "Casual Flip Flop",
+    "price": "599",
+    "stars": 4.6
+  },
+  {
+    "id": 16,
+    "image": "women16.jpg",
+    "name": "Slipper",
+    "price": "499",
+    "stars": 4.7
+  },
+  {
+    "id": 17,
+    "image": "women17.jpg",
+    "name": "Casual Slide",
+    "price": "899",
+    "stars": 4.3
+  },
+  {
+    "id": 18,
+    "image": "women18.jpg",
+    "name": "Blue Crop Top",
+    "price": "599",
+    "stars": 4.5
+  },
+  {
+    "id": 19,
+    "image": "women19.jpg",
+    "name": "Pink T-Shirt",
+    "price": "599",
+    "stars": 4.2
+  },
+  {
+    "id": 20,
+    "image": "women20.jpg",
+    "name": "Lime T-Shirt",
+    "price": "599",
+    "stars": 4.4
+  },
+  {
+    "id": 21,
+    "image": "women21.jpg",
+    "name": "Red Crop Top",
+    "price": "799",
+    "stars": 4.6
+  },
+  {
+    "id": 22,
+    "image": "women22.jpg",
+    "name": "Green T-Shirt",
+    "price": "599",
+    "stars": 4.3
+  }
+]

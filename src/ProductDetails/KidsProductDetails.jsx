@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
+import { Button } from "../components/ui/button";
+import imageMap from "../pages/imageMap";
 
-import { Button } from "@/components/ui/button";
 
-import imageMap from "@/pages/imageMap";
+
+
 
 const KidsProductDetails = () => {
   const { id } = useParams();

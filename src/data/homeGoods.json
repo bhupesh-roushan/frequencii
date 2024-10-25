@@ -1,31 +1,30 @@
 [
-    {
-      "id": 1,
-      "image": "homeGoods1.jpg",
-      "name": "Night Lamp",
-      "price": "1999",
-      "stars": 4.8
-    },
-    {
-      "id": 2,
-      "image": "homeGoods2.jpg",
-      "name": "Decor Glass",
-      "price": "699",
-      "stars": 4.6
-    },
-    {
-      "id": 3,
-      "image": "homeGoods3.jpg",
-      "name": "Frequencii TV 43",
-      "price": "24399",
-      "stars": 4.7
-    },
-    {
-      "id": 4,
-      "image": "homeGoods4.jpg",
-      "name": "Frequencii Fridge",
-      "price": "14499",
-      "stars": 4.1
-    }
-  ]
-  
+  {
+    "id": 1,
+    "image": "homeGoods1.jpg",
+    "name": "Night Lamp",
+    "price": "1999",
+    "stars": 4.8
+  },
+  {
+    "id": 2,
+    "image": "homeGoods2.jpg",
+    "name": "Decor Glass",
+    "price": "699",
+    "stars": 4.6
+  },
+  {
+    "id": 3,
+    "image": "homeGoods3.jpg",
+    "name": "Frequencii TV 43",
+    "price": "24399",
+    "stars": 4.7
+  },
+  {
+    "id": 4,
+    "image": "homeGoods4.jpg",
+    "name": "Frequencii Fridge",
+    "price": "14499",
+    "stars": 4.1
+  }
+]

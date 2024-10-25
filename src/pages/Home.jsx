@@ -96,8 +96,6 @@ const Home = () => {
       <CategoryCard />
 
       {/* Top Products Section in Carousel */}
-
-     
     </div>
   );
 };

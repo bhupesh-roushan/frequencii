@@ -12,6 +12,7 @@ import hairCareProductSlice from "../redux/HairCareProductSlice"
 import deodrantsProductSlice from "../redux/DeodrantsProductSlice"
 
 
+
 const store = configureStore({
     reducer: {
         cart: CartSlice,
@@ -24,8 +25,7 @@ const store = configureStore({
         homeGoodsProducts:homeGoodsProductSlice,
         bodyCareProducts:bodyCareProductSlice,
         hairCareProducts:hairCareProductSlice,
-        deodrantsProducts:deodrantsProductSlice
-
+        deodrantsProducts:deodrantsProductSlice,
     },
 });
 

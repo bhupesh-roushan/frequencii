@@ -9,14 +9,12 @@ import {
 } from "../../components/ui/card";
 
 import kids from "../../data/kids.json";
-
-import imageMap from "@/pages/imageMap";
+import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setKidsProducts } from "@/redux/KidsProductSlice";
-
-// Map the images to use dynamically
+import { addToCart } from "../../redux/CartSlice";
+import { setKidsProducts } from "../../redux/KidsProductSlice";
+import { Button } from "../ui/button";
 
 function Kids() {
   const dispatch = useDispatch();
@@ -40,7 +38,11 @@ function Kids() {
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {kids.map((product) => (
-          <Link to={`/kids/product/${product.id}`} key={product.id} className="w-full h-full">
+          <Link
+            to={`/kids/product/${product.id}`}
+            key={product.id}
+            className="w-full h-full"
+          >
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img

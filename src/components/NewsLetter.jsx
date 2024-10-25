@@ -11,7 +11,7 @@ function Newsletter() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState("");
-  const [loading, setLoading] = useState(false); // Loading state
+  const [loading, setLoading] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);

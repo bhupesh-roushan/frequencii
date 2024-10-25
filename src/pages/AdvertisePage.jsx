@@ -13,6 +13,11 @@ import { FaChartBar, FaBullhorn, FaEnvelope } from "react-icons/fa";
 import { BarLoader } from "react-spinners"; // Import BarLoader
 import emailjs from "@emailjs/browser";
 
+const serviceID2 = import.meta.env.VITE_EMAILJS_SERVICE_ID_2; // Second service
+const templateID2 = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_2;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+
 function AdvertisePage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -44,17 +49,17 @@ function AdvertisePage() {
 
     emailjs
       .send(
-        'service_jz6mfuo', // Your EmailJS service ID
-        'template_2b0oxnl', // Your EmailJS template ID
+        serviceID2, // Your EmailJS service ID
+        templateID2, // Your EmailJS template ID
         templateParams, // Parameters to include
-        '4MdAfipzzfBYvJnUm' // Your EmailJS public key
+        publicKey // Your EmailJS public key
       )
       .then((response) => {
         setResponseMessage("Message sent successfully!"); // Set success message
         setFormData({
           name: "",
           email: "",
-          message: ""
+          message: "",
         });
         setLoading(false); // Stop loading after success
 
@@ -84,7 +89,8 @@ function AdvertisePage() {
             Advertise with Frequencii
           </h1>
           <p className="text-lg text-muted-foreground">
-            Reach thousands of potential customers by advertising your brand on Frequencii.
+            Reach thousands of potential customers by advertising your brand on
+            Frequencii.
           </p>
         </div>
 
@@ -94,14 +100,18 @@ function AdvertisePage() {
           <Card className="border-none shadow-md shadow-blue-200">
             <CardHeader>
               <FaChartBar className="text-primary text-xl sm:text-4xl mb-4" />
-              <CardTitle className="text-lg sm:text-xl md:text-2xl">Banner Ads</CardTitle>
+              <CardTitle className="text-lg sm:text-xl md:text-2xl">
+                Banner Ads
+              </CardTitle>
               <CardDescription>
                 Promote your brand with eye-catching banner ads on our website.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Get maximum visibility with our high-traffic banner ad placements.</p>
-            
+              <p>
+                Get maximum visibility with our high-traffic banner ad
+                placements.
+              </p>
             </CardContent>
           </Card>
 
@@ -109,14 +119,17 @@ function AdvertisePage() {
           <Card className="border-none shadow-md shadow-blue-200">
             <CardHeader>
               <FaBullhorn className="text-primary text-4xl mb-4" />
-              <CardTitle className="text-lg sm:text-xl md:text-2xl">Sponsored Products</CardTitle>
+              <CardTitle className="text-lg sm:text-xl md:text-2xl">
+                Sponsored Products
+              </CardTitle>
               <CardDescription>
                 Highlight your products directly on our ecommerce platform.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Feature your products in front of thousands of active shoppers.</p>
-              
+              <p>
+                Feature your products in front of thousands of active shoppers.
+              </p>
             </CardContent>
           </Card>
 
@@ -124,28 +137,36 @@ function AdvertisePage() {
           <Card className="border-none shadow-md shadow-blue-200">
             <CardHeader>
               <FaEnvelope className="text-primary text-4xl mb-4" />
-              <CardTitle className="text-lg sm:text-xl md:text-2xl">Email Marketing</CardTitle>
+              <CardTitle className="text-lg sm:text-xl md:text-2xl">
+                Email Marketing
+              </CardTitle>
               <CardDescription>
                 Reach out to our subscriber list with targeted email campaigns.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Send promotional emails to our engaged and active subscribers.</p>
-              
+              <p>
+                Send promotional emails to our engaged and active subscribers.
+              </p>
             </CardContent>
           </Card>
         </div>
 
         {/* Contact Form Section */}
         <div className="shadow-md shadow-blue-200 p-10 rounded-lg">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8">Get in Touch</h2>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-8 gradient-title">
+            Get in Touch
+          </h2>
           <p className="text-center text-muted-foreground mb-8">
-            Interested in advertising with us? Fill out the form below and our team will get back to you.
+            Interested in advertising with us? Fill out the form below and our
+            team will get back to you.
           </p>
-          
+
           <form className="space-y-4 max-w-xl mx-auto" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium">Your Name</label>
+              <label htmlFor="name" className="block text-sm font-medium">
+                Your Name
+              </label>
               <Input
                 id="name"
                 placeholder="Enter your name"
@@ -157,7 +178,9 @@ function AdvertisePage() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium">Your Email</label>
+              <label htmlFor="email" className="block text-sm font-medium">
+                Your Email
+              </label>
               <Input
                 id="email"
                 type="email"
@@ -170,7 +193,9 @@ function AdvertisePage() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium">Message</label>
+              <label htmlFor="message" className="block text-sm font-medium">
+                Message
+              </label>
               <Textarea
                 id="message"
                 placeholder="Tell us about your advertising needs"
@@ -202,7 +227,13 @@ function AdvertisePage() {
 
             {/* Display success or error message */}
             {responseMessage && (
-              <p className={`mt-4 text-center ${responseMessage.includes("successfully") ? "text-green-600" : "text-red-600"}`}>
+              <p
+                className={`mt-4 text-center ${
+                  responseMessage.includes("successfully")
+                    ? "text-green-600"
+                    : "text-red-600"
+                }`}
+              >
                 {responseMessage}
               </p>
             )}

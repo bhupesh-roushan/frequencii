@@ -8,42 +8,31 @@ import Modal from "./Modal";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import { setSearchTerm } from "../redux/ProductSlice";
-import { setBodyCareSearchTerm } from "@/redux/BodyCareProductSlice";
-import { setDeodrantsSearchTerm } from "@/redux/DeodrantsProductSlice";
-import { setHairCareSearchTerm } from "@/redux/HairCareProductSlice";
-import { setHomeGoodsSearchTerm } from "@/redux/HomeGoodsProductSlice";
-import { setKidsSearchTerm } from "@/redux/KidsProductSlice";
-import { setLaptopsSearchTerm } from "@/redux/LaptopsProductSlice";
-import { setMenSearchTerm } from "@/redux/MenProductSlice";
-import { setWomenSearchTerm } from "@/redux/WomenProductSlice";
-import { setMobilesSearchTerm } from "@/redux/MobilesProductSlice";
-
-
-import frequencii from "../assets/images/frequencii.svg"
+import frequencii from "../assets/images/frequencii.svg";
 
 const Navbar = () => {
-  const[isModalOpen,setIsModalOpen]=useState(false)
-  const[isLogin,setIsLogin]=useState(true)
-  const [search,setSearch]=useState()
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
+  const [search, setSearch] = useState();
 
-  const dispatch=useDispatch()
-  const navigate=useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleSearch=(e)=>{
-    e.preventDefault()
-    dispatch(setSearchTerm(search)) 
-    navigate("/filter-data")
-  }
+  const handleSearch = (e) => {
+    e.preventDefault();
+    dispatch(setSearchTerm(search));
+    navigate("/filter-data");
+  };
 
-  const openSignUpForm=()=>{
-    setIsLogin(false)
-    setIsModalOpen(true)
-  }
+  const openSignUpForm = () => {
+    setIsLogin(false);
+    setIsModalOpen(true);
+  };
 
-  const openLoginForm=()=>{
-    setIsLogin(true)
-    setIsModalOpen(true)
-  }
+  const openLoginForm = () => {
+    setIsLogin(true);
+    setIsModalOpen(true);
+  };
 
   const products = useSelector((state) => state.cart.products);
   return (
@@ -61,11 +50,14 @@ const Navbar = () => {
         <div className="container mx-auto  px-1 md:px-4 lg:px-5 py-4 flex justify-between items-center">
           {/* Search bar */}
           <div className="relative flex-1 mx-4">
-            <form className="flex flex-row justify-center items-center gap-5" onSubmit={handleSearch}>
+            <form
+              className="flex flex-row justify-center items-center gap-5"
+              onSubmit={handleSearch}
+            >
               <Input
                 placeholder="Search"
                 className="w-full min-w-24 py-2 px-2 shadow-sm shadow-blue-200 hover:shadow-blue-200 delay-120 transition-all ease-in focus:outline-none rounded-lg ring-0 border-0 focus-visible:ring-offset-0 focus-visible:ring-0 text-sm"
-                onChange={(e)=>setSearch(e.target.value)}
+                onChange={(e) => setSearch(e.target.value)}
               />
               <FaSearch className="absolute text-sm sm:text-lg top-3 right-3 hover:scale-125 hover:text-gray-600 transition-all delay-120 ease-in text-gray-500 " />
             </form>
@@ -93,14 +85,14 @@ const Navbar = () => {
             <Button
               variant="outline"
               className="hidden md:block bg-gray-500 text-white transition-all ease-in delay-110 hover:scale-105 hover:bg-blue-600 hover:text-white rounded-lg"
-              onClick={()=>setIsModalOpen(true)}
+              onClick={() => setIsModalOpen(true)}
             >
               Login
             </Button>
             <Button
               variant="outline"
               className="block md:hidden mr-2 hover:bg-gray-800 text-gray-700 hover:text-white transition-all ease-in delay-110 hover:scale-105"
-              onClick={()=>setIsModalOpen(true)}
+              onClick={() => setIsModalOpen(true)}
             >
               <FaUser />
             </Button>
@@ -109,14 +101,13 @@ const Navbar = () => {
       </div>
       {/* links below  */}
 
-
-        <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
-
-          {isLogin?<Login openSignUpForm={openSignUpForm}/>:<SignUp openLoginForm={openLoginForm}/>}
-        </Modal>
-
-
-
+      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
+        {isLogin ? (
+          <Login openSignUpForm={openSignUpForm} />
+        ) : (
+          <SignUp openLoginForm={openLoginForm} />
+        )}
+      </Modal>
     </nav>
   );
 };

@@ -9,15 +9,12 @@ import {
 } from "../ui/card";
 
 import hairCare from "../../data/hairCare.json";
-
 import { Button } from "../ui/button";
-import imageMap from "@/pages/imageMap";
-
-// ... import all other images
+import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setHairCareProducts } from "@/redux/HairCareProductSlice";
+import { addToCart } from "../../redux/CartSlice";
+import { setHairCareProducts } from "../../redux/HairCareProductSlice";
 
 function HairCare() {
   const dispatch = useDispatch();

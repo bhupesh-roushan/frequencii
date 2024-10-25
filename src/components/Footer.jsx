@@ -28,13 +28,15 @@ const Footer = () => {
 
         <div className="flex flex-col sm:flex-row gap-3 text-sm sm:text-lg sm:gap-20 mt-5">
           <div>
-            <h1 className="font-semibold text-gray-700" >Quick Links</h1>
+            <h1 className="font-semibold text-gray-700">Quick Links</h1>
             <ul className="mt-2 flex flex-col gap-2">
               <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
+                <Link to={"/"} className="flex flex-row items-center gap-2">
                 <span>
                   <FaHome className="text-slate-500" />
                 </span>
                 <span>Home</span>
+                </Link>
               </li>
               <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
                 <Link
@@ -96,28 +98,28 @@ const Footer = () => {
             <h1 className="font-semibold  text-gray-700">Company</h1>
             <ul className="mt-2 flex flex-col gap-2">
               <Link to="/help">
-              <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
-                <span>
-                  <FaHandsHelping className="text-slate-500" />
-                </span>
-                <span>Help</span>
-              </li>
+                <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
+                  <span>
+                    <FaHandsHelping className="text-slate-500" />
+                  </span>
+                  <span>Help</span>
+                </li>
               </Link>
               <Link to="/sales">
-              <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
-                <span>
-                  <FaRupeeSign className="text-slate-500" />
-                </span>
-                <span>Sales</span>
-              </li>
+                <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
+                  <span>
+                    <FaRupeeSign className="text-slate-500" />
+                  </span>
+                  <span>Sales</span>
+                </li>
               </Link>
               <Link to="/advertise">
-              <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
-                <span>
-                  <FaBullhorn className="text-slate-500" />
-                </span>
-                <span>Advertise</span>
-              </li>
+                <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
+                  <span>
+                    <FaBullhorn className="text-slate-500" />
+                  </span>
+                  <span>Advertise</span>
+                </li>
               </Link>
             </ul>
           </div>

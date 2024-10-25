@@ -2,15 +2,19 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
+import imageMap from "../pages/imageMap";
+import { Button } from "../components/ui/button";
 
-import imageMap from "@/pages/imageMap";
 
-import { Button } from "@/components/ui/button";
+
+
 
 
 const HomeGoodsProductDetails = () => {
   const { id } = useParams();
-  const homeGoodsProducts = useSelector((state) => state.homeGoodsProducts.homeGoodsProducts);
+  const homeGoodsProducts = useSelector(
+    (state) => state.homeGoodsProducts.homeGoodsProducts
+  );
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -46,8 +50,12 @@ const HomeGoodsProductDetails = () => {
               <h1 className="text-lg sm:text-2xl font-bold gradient-title">
                 {product.name}
               </h1>
-              <p className="text-md sm:text-xl font-semibold">Price: ₹{product.price}</p>
-              <p className="font-semibold text-sm sm:text-xl">Rating: {product.stars} ⭐</p>
+              <p className="text-md sm:text-xl font-semibold">
+                Price: ₹{product.price}
+              </p>
+              <p className="font-semibold text-sm sm:text-xl">
+                Rating: {product.stars} ⭐
+              </p>
               <Button
                 variant="outline"
                 className="shadow-md w-[100px] sm:w-full mt-5 shadow-blue-200"

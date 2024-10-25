@@ -8,18 +8,13 @@ import {
   CardFooter,
 } from "../../components/ui/card";
 
-import men from "../../data/men.json"; // Ensure this path is correct
-
+import men from "../../data/men.json";
 import { Button } from "../../components/ui/button";
-import imageMap from "@/pages/imageMap";
-// ... import all other images
+import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setMenProducts } from "@/redux/menProductSlice";
-
-// Map the images to use dynamically
-
+import { addToCart } from "../../redux/CartSlice";
+import { setMenProducts } from "../../redux/menProductSlice";
 
 function Men() {
   const dispatch = useDispatch();
@@ -43,7 +38,11 @@ function Men() {
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {men.map((product) => (
-          <Link to={`/men/product/${product.id}`} key={product.id} className="w-full h-full">
+          <Link
+            to={`/men/product/${product.id}`}
+            key={product.id}
+            className="w-full h-full"
+          >
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img

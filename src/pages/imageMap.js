@@ -78,6 +78,8 @@ import mobiles2 from "../assets/mobilesImages/mobiles2.jpg";
 import mobiles3 from "../assets/mobilesImages/mobiles3.jpg";
 import mobiles4 from "../assets/mobilesImages/mobiles4.jpg";
 
+
+
 const imageMap = {
   "product1.jpg": product1,
   "product2.jpg": product2,
@@ -158,6 +160,7 @@ const imageMap = {
   "mobiles2.jpg": mobiles2,
   "mobiles3.jpg": mobiles3,
   "mobiles4.jpg": mobiles4,
+  
 };
 
 export default imageMap;

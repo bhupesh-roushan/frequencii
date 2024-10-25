@@ -9,15 +9,11 @@ import {
 } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import women from "../../data/women.json";
-
-import imageMap from "@/pages/imageMap";
-
+import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setWomenProducts } from "@/redux/WomenProductSlice";
-
-// Map the images to use dynamically
+import { addToCart } from "../../redux/CartSlice";
+import { setWomenProducts } from "../../redux/WomenProductSlice";
 
 function Women() {
   const dispatch = useDispatch();

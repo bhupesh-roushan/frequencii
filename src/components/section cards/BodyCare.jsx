@@ -8,18 +8,13 @@ import {
   CardFooter,
 } from "../ui/card";
 
-import bodyCare from "../../data/bodyCare.json"
-
+import bodyCare from "../../data/bodyCare.json";
 import { Button } from "../ui/button";
-
-import imageMap from "@/pages/imageMap";
-
+import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setBodyCareProducts } from "@/redux/BodyCareProductSlice";
-
-
+import { addToCart } from "../../redux/CartSlice";
+import { setBodyCareProducts } from "../../redux/BodyCareProductSlice";
 
 function BodyCare() {
   const dispatch = useDispatch();
@@ -43,7 +38,11 @@ function BodyCare() {
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {bodyCare.map((product) => (
-          <Link to={`/bodyCare/product/${product.id}`} key={product.id} className="w-full h-full">
+          <Link
+            to={`/bodyCare/product/${product.id}`}
+            key={product.id}
+            className="w-full h-full"
+          >
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img

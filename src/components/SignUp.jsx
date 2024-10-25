@@ -3,9 +3,9 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 
-const SignUp = ({openLoginForm}) => {
+const SignUp = ({ openLoginForm }) => {
   return (
-    <div className='m-5 shadow-lg shadow-blue-200 p-5 rounded-lg'>
+    <div className="m-5 shadow-lg shadow-blue-200 p-5 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
       <form action="">
         <div className="mb-4">
@@ -54,7 +54,13 @@ const SignUp = ({openLoginForm}) => {
 
       <div className="text-center">
         <span className="text-gray-700">Already have an Account?</span>
-        <Button variant="destructive" onClick={openLoginForm} className="ml-2 shadow-md shadow-blue-200">Login</Button>
+        <Button
+          variant="destructive"
+          onClick={openLoginForm}
+          className="ml-2 shadow-md shadow-blue-200"
+        >
+          Login
+        </Button>
       </div>
     </div>
   );

@@ -8,19 +8,13 @@ import {
   CardFooter,
 } from "../ui/card";
 
-import homeGoods from "../../data/homeGoods.json"
-
+import homeGoods from "../../data/homeGoods.json";
 import { Button } from "../ui/button";
-
-
-// ... import all other images
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "@/redux/CartSlice";
-import { setHomeGoodsProducts } from "@/redux/HomeGoodsProductSlice";
-
-// Map the images to use dynamically
-import imageMap from "@/pages/imageMap";
+import { addToCart } from "../../redux/CartSlice";
+import { setHomeGoodsProducts } from "../../redux/HomeGoodsProductSlice";
+import imageMap from "../../pages/imageMap";
 
 function HomeGoods() {
   const dispatch = useDispatch();
@@ -44,7 +38,11 @@ function HomeGoods() {
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {homeGoods.map((product) => (
-          <Link to={`/homeGoods/product/${product.id}`} key={product.id} className="w-full h-full">
+          <Link
+            to={`/homeGoods/product/${product.id}`}
+            key={product.id}
+            className="w-full h-full"
+          >
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img
