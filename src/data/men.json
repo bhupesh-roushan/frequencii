@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "image": "men1.jpg",
+      "name": "Checked Shirt",
+      "price": "1299",
+      "stars": 4.5
+    },
+    {
+      "id": 2,
+      "image": "men2.jpg",
+      "name": "Casual Shoe",
+      "price": "4999",
+      "stars": 4.2
+    },
+    {
+      "id": 3,
+      "image": "men3.jpg",
+      "name": "Formal Shoe",
+      "price": "3499",
+      "stars": 4.6
+    },
+    {
+      "id": 4,
+      "image": "men4.jpg",
+      "name": "Casual Short",
+      "price": "1499",
+      "stars": 4.8
+    },
+    {
+      "id": 5,
+      "image": "men5.jpg",
+      "name": "Running Shoes",
+      "price": "3599",
+      "stars": 4.3
+    },
+    {
+      "id": 6,
+      "image": "men6.jpg",
+      "name": "Red Checked Shirt",
+      "price": "1999",
+      "stars": 4.5
+    },
+    {
+      "id": 7,
+      "image": "men7.jpg",
+      "name": "Blue Jeans",
+      "price": "3199",
+      "stars": 4.7
+    },
+    {
+      "id": 8,
+      "image": "men8.jpg",
+      "name": "Black T-Shirt",
+      "price": "1199",
+      "stars": 4.4
+    },
+    {
+      "id": 9,
+      "image": "men9.jpg",
+      "name": "White T-Shirt",
+      "price": "1199",
+      "stars": 4.1
+    },
+    {
+      "id": 10,
+      "image": "men10.jpg",
+      "name": "Yellow T-Shirt",
+      "price": "1199",
+      "stars": 4.6
+    },
+    {
+      "id": 11,
+      "image": "men11.jpg",
+      "name": "Causal Jacket",
+      "price": "4999",
+      "stars": 4.3
+    },
+    {
+      "id": 12,
+      "image": "men12.jpg",
+      "name": "Running Shoe",
+      "price": "4499",
+      "stars": 4.2
+    }
+  ]
+  

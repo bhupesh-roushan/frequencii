@@ -18,11 +18,11 @@ const images1 = [
 const images2 = [
   { url: electronics1, link: "/electronics/mobiles" },
   { url: electronics2, link: "/electronics/laptops" },
-  { url: electronics3, link: "/electronics/home-goods" }
+  { url: electronics3, link: "/electronics/homeGoods" }
 ];
 const images4 = [
-  { url: beauty1, link: "/beauty/bodycare" },
-  { url: beauty2, link: "/beauty/haircare" },
+  { url: beauty1, link: "/beauty/bodyCare" },
+  { url: beauty2, link: "/beauty/hairCare" },
   { url: beauty3, link: "/beauty/deodrants" }
 ];
 

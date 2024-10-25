@@ -8,49 +8,36 @@ import {
   CardFooter,
 } from "../../components/ui/card";
 
-import men from "../../data/men.json"; // Ensure this path is correct
-
+import kids from "../../data/kids.json";
 import { Button } from "../../components/ui/button";
-import men1 from "../../assets/mens images/men1.jpg";
-import men2 from "../../assets/mens images/men2.jpg";
-import men3 from "../../assets/mens images/men3.jpg";
-import men4 from "../../assets/mens images/men4.jpg";
-import men5 from "../../assets/mens images/men5.jpg";
-import men6 from "../../assets/mens images/men6.jpg";
-import men7 from "../../assets/mens images/men7.jpg";
-import men8 from "../../assets/mens images/men8.jpg";
-import men9 from "../../assets/mens images/men9.jpg";
-import men10 from "../../assets/mens images/men10.jpg";
-import men11 from "../../assets/mens images/men11.jpg";
-import men12 from "../../assets/mens images/men12.jpg";
-// ... import all other images
+import kids1 from "../../assets/kidsImages/kids1.jpg";
+import kids2 from "../../assets/kidsImages/kids2.jpg";
+import kids3 from "../../assets/kidsImages/kids3.jpg";
+import kids4 from "../../assets/kidsImages/kids4.jpg";
+import kids5 from "../../assets/kidsImages/kids5.jpg";
+import kids6 from "../../assets/kidsImages/kids6.jpg";
+
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "@/redux/CartSlice";
-import { setMenProducts } from "@/redux/menProductSlice";
+import { setKidsProducts } from "@/redux/KidsProductSlice";
 
 // Map the images to use dynamically
 const imageMap = {
-    "men1.jpg": men1,
-    "men2.jpg": men2,
-    "men3.jpg": men3,
-    "men4.jpg": men4,
-    "men5.jpg": men5,
-    "men6.jpg": men6,
-    "men7.jpg": men7,
-    "men8.jpg": men8,
-    "men9.jpg": men9,
-    "men10.jpg": men10,
-    "men11.jpg": men11,
-    "men12.jpg": men12,
+    "kids1.jpg": kids1,
+    "kids2.jpg": kids2,
+    "kids3.jpg": kids3,
+    "kids4.jpg": kids4,
+    "kids5.jpg": kids5,
+    "kids6.jpg": kids6,
   };
 
-function Men() {
+function Kids() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     // Set men products in Redux store
-    dispatch(setMenProducts(men));
+    dispatch(setKidsProducts(kids));
   }, [dispatch]);
 
   const handleAddToCart = (e, product) => {
@@ -63,11 +50,11 @@ function Men() {
   return (
     <div className="container mx-auto p-10">
       <h1 className="text-4xl font-bold mb-6 text-center gradient-title">
-        Men's Collection
+        Kids Collection
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-        {men.map((product) => (
-          <Link to={`/men/product/${product.id}`} key={product.id} className="w-full h-full">
+        {kids.map((product) => (
+          <Link to={`/kids/product/${product.id}`} key={product.id} className="w-full h-full">
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img
@@ -98,4 +85,4 @@ function Men() {
   );
 }
 
-export default Men;
+export default Kids;

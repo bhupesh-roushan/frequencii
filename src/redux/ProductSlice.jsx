@@ -20,5 +20,7 @@ const ProductSlice = createSlice({
   },
 });
 
+
+
 export const { setProducts,setSearchTerm } = ProductSlice.actions;
 export default ProductSlice.reducer;

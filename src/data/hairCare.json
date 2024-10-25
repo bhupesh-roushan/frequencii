@@ -1,0 +1,37 @@
+ [
+    {
+        "id": 1,
+        "image": "hairCare1.jpg",
+        "name": "Hair Shampoo",
+        "price": "349",
+        "stars": 4.8
+    },
+    {
+        "id": 2,
+        "image": "hairCare2.jpg",
+        "name": "Jojoba Oil 200ml",
+        "price": "299",
+        "stars": 4.6
+    },
+    {
+        "id": 3,
+        "image": "hairCare3.jpg",
+        "name": "Coconut Oil 300ml",
+        "price": "199",
+        "stars": 4.7
+    },
+    {
+        "id": 4,
+        "image": "hairCare4.jpg",
+        "name": "Hair Conditioner",
+        "price": "349",
+        "stars": 4.1
+    },
+    {
+        "id": 5,
+        "image": "hairCare5.jpg",
+        "name": "Shampoo & Conditioner Combo",
+        "price": "599",
+        "stars": 4.1
+    }
+]

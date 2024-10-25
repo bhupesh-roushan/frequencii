@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "image": "deodrants1.jpg",
+      "name": "Classic Perfume Deodrant",
+      "price": "899",
+      "stars": 4.8
+    },
+    {
+      "id": 2,
+      "image": "deodrants2.jpg",
+      "name": "Musk Perfume Deodrant",
+      "price": "1299",
+      "stars": 4.6
+    },
+    {
+      "id": 3,
+      "image": "deodrants3.jpg",
+      "name": "Amber Perfume Deodrant",
+      "price": "1699",
+      "stars": 4.7
+    },
+    {
+      "id": 4,
+      "image": "deodrants4.jpg",
+      "name": "Smoky Perfume Deodrant",
+      "price": "1149",
+      "stars": 4.1
+    },
+    {
+        "id": 5,
+        "image": "deodrants5.jpg",
+        "name": "Intense Perfume Deodrant",
+        "price": "2249",
+        "stars": 4.1
+      }
+  ]
+  
