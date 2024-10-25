@@ -29,7 +29,7 @@ import Deodrants from "./components/section cards/Deodrants";
 
 // Product Details
 import MenProductDetails from "./ProductDetails/MenProductDetails";
-import WomenProductDetails from "./ProductDetails/womenProductDetails"
+import WomenProductDetails from "./ProductDetails/WomenProductDetails"
 import KidsProductDetails from "./ProductDetails/KidsProductDetails";
 import MobilesProductDetails from "./ProductDetails/MobilesProductDetails";
 import LaptopsProductDetails from "./ProductDetails/LaptopsProductDetails";

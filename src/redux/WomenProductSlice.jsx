@@ -6,7 +6,7 @@ const initialState = {
   filteredData: [],
 };
 
-const womenProductSlice = createSlice({
+const WomenProductSlice = createSlice({
   name: 'womenProducts',
   initialState: initialState,
   reducers: {
@@ -22,5 +22,5 @@ const womenProductSlice = createSlice({
   },
 });
 
-export const { setWomenProducts, setWomenSearchTerm } = womenProductSlice.actions;
-export default womenProductSlice.reducer;
+export const { setWomenProducts, setWomenSearchTerm } = WomenProductSlice.actions;
+export default WomenProductSlice.reducer;
