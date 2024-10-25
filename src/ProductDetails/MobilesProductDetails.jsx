@@ -2,24 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
-
-import mobiles1 from "../assets/mobilesImages/mobiles1.jpg";
-import mobiles2 from "../assets/mobilesImages/mobiles2.jpg";
-import mobiles3 from "../assets/mobilesImages/mobiles3.jpg";
-import mobiles4 from "../assets/mobilesImages/mobiles4.jpg";
+import imageMap from "@/pages/imageMap";
 
 import { Button } from "@/components/ui/button";
 
-const imageMap = {
-  "mobiles1.jpg": mobiles1,
-  "mobiles2.jpg": mobiles2,
-  "mobiles3.jpg": mobiles3,
-  "mobiles4.jpg": mobiles4,
-};
-
 const MobilesProductDetails = () => {
   const { id } = useParams();
-  const mobilesProducts = useSelector((state) => state.mobilesProducts.mobilesProducts);
+  const mobilesProducts = useSelector(
+    (state) => state.mobilesProducts.mobilesProducts
+  );
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -55,8 +46,12 @@ const MobilesProductDetails = () => {
               <h1 className="text-lg sm:text-2xl font-bold gradient-title">
                 {product.name}
               </h1>
-              <p className="text-md sm:text-xl font-semibold">Price: ₹{product.price}</p>
-              <p className="font-semibold text-sm sm:text-xl">Rating: {product.stars} ⭐</p>
+              <p className="text-md sm:text-xl font-semibold">
+                Price: ₹{product.price}
+              </p>
+              <p className="font-semibold text-sm sm:text-xl">
+                Rating: {product.stars} ⭐
+              </p>
               <Button
                 variant="outline"
                 className="shadow-md w-[100px] sm:w-full mt-5 shadow-blue-200"

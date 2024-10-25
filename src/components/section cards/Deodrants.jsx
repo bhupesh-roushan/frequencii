@@ -8,16 +8,11 @@ import {
   CardFooter,
 } from "../ui/card";
 
-import deodrants from "../../data/deodrants.json"
+import deodrants from "../../data/deodrants.json";
 
 import { Button } from "../ui/button";
-import deodrants1 from "../../assets/deodrantsImages/deodrants1.jpg";
-import deodrants2 from "../../assets/deodrantsImages/deodrants2.jpg";
-import deodrants3 from "../../assets/deodrantsImages/deodrants3.jpg";
-import deodrants4 from "../../assets/deodrantsImages/deodrants4.jpg";
-import deodrants5 from "../../assets/deodrantsImages/deodrants5.jpg";
 
-
+import imageMap from "@/pages/imageMap";
 // ... import all other images
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -25,15 +20,6 @@ import { addToCart } from "@/redux/CartSlice";
 import { setDeodrantsProducts } from "@/redux/DeodrantsProductSlice";
 
 // Map the images to use dynamically
-const imageMap = {
-    "deodrants1.jpg": deodrants1,
-    "deodrants2.jpg": deodrants2,
-    "deodrants3.jpg": deodrants3,
-    "deodrants4.jpg": deodrants4,
-    "deodrants5.jpg": deodrants5,
-   
-
-  };
 
 function Deodrants() {
   const dispatch = useDispatch();
@@ -57,7 +43,11 @@ function Deodrants() {
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {deodrants.map((product) => (
-          <Link to={`/deodrants/product/${product.id}`} key={product.id} className="w-full h-full">
+          <Link
+            to={`/deodrants/product/${product.id}`}
+            key={product.id}
+            className="w-full h-full"
+          >
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img

@@ -3,24 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
 
-import kids1 from "../assets/kidsImages/kids1.jpg";
-import kids2 from "../assets/kidsImages/kids2.jpg";
-import kids3 from "../assets/kidsImages/kids3.jpg";
-import kids4 from "../assets/kidsImages/kids4.jpg";
-import kids5 from "../assets/kidsImages/kids5.jpg";
-import kids6 from "../assets/kidsImages/kids6.jpg";
-
 import { Button } from "@/components/ui/button";
 
-const imageMap = {
-    "kids1.jpg": kids1,
-    "kids2.jpg": kids2,
-    "kids3.jpg": kids3,
-    "kids4.jpg": kids4,
-    "kids5.jpg": kids5,
-    "kids6.jpg": kids6,
-  };
-  
+import imageMap from "@/pages/imageMap";
 
 const KidsProductDetails = () => {
   const { id } = useParams();
@@ -60,8 +45,12 @@ const KidsProductDetails = () => {
               <h1 className="text-lg sm:text-2xl font-bold gradient-title">
                 {product.name}
               </h1>
-              <p className="text-md sm:text-xl font-semibold">Price: ₹{product.price}</p>
-              <p className="font-semibold text-sm sm:text-xl">Rating: {product.stars} ⭐</p>
+              <p className="text-md sm:text-xl font-semibold">
+                Price: ₹{product.price}
+              </p>
+              <p className="font-semibold text-sm sm:text-xl">
+                Rating: {product.stars} ⭐
+              </p>
               <Button
                 variant="outline"
                 className="shadow-md w-[100px] sm:w-full mt-5 shadow-blue-200"

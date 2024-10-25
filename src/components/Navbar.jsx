@@ -8,12 +8,24 @@ import Modal from "./Modal";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import { setSearchTerm } from "../redux/ProductSlice";
+import { setBodyCareSearchTerm } from "@/redux/BodyCareProductSlice";
+import { setDeodrantsSearchTerm } from "@/redux/DeodrantsProductSlice";
+import { setHairCareSearchTerm } from "@/redux/HairCareProductSlice";
+import { setHomeGoodsSearchTerm } from "@/redux/HomeGoodsProductSlice";
+import { setKidsSearchTerm } from "@/redux/KidsProductSlice";
+import { setLaptopsSearchTerm } from "@/redux/LaptopsProductSlice";
+import { setMenSearchTerm } from "@/redux/MenProductSlice";
+import { setWomenSearchTerm } from "@/redux/WomenProductSlice";
+import { setMobilesSearchTerm } from "@/redux/MobilesProductSlice";
+
+
 import frequencii from "../assets/images/frequencii.svg"
 
 const Navbar = () => {
   const[isModalOpen,setIsModalOpen]=useState(false)
   const[isLogin,setIsLogin]=useState(true)
   const [search,setSearch]=useState()
+
   const dispatch=useDispatch()
   const navigate=useNavigate()
 

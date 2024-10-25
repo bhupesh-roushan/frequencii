@@ -3,19 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
 
-import homeGoods1 from "../assets/HomeGoodsImages/homeGoods1.jpg";
-import homeGoods2 from "../assets/HomeGoodsImages/homeGoods2.jpg";
-import homeGoods3 from "../assets/HomeGoodsImages/homeGoods3.jpg";
-import homeGoods4 from "../assets/HomeGoodsImages/homeGoods4.jpg";
+import imageMap from "@/pages/imageMap";
 
 import { Button } from "@/components/ui/button";
 
-const imageMap = {
-  "homeGoods1.jpg": homeGoods1,
-  "homeGoods2.jpg": homeGoods2,
-  "homeGoods3.jpg": homeGoods3,
-  "homeGoods4.jpg": homeGoods4,
-};
 
 const HomeGoodsProductDetails = () => {
   const { id } = useParams();

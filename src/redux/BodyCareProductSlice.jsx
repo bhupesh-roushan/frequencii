@@ -22,5 +22,7 @@ const bodyCareProductSlice = createSlice({
   },
 });
 
+
+
 export const { setBodyCareProducts, setBodyCareSearchTerm } = bodyCareProductSlice.actions;
 export default bodyCareProductSlice.reducer;

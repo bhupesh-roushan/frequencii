@@ -11,31 +11,15 @@ import {
 import bodyCare from "../../data/bodyCare.json"
 
 import { Button } from "../ui/button";
-import bodyCare1 from "../../assets/bodyCareImages/bodyCare1.jpg";
-import bodyCare2 from "../../assets/bodyCareImages/bodyCare2.jpg";
-import bodyCare3 from "../../assets/bodyCareImages/bodyCare3.jpg";
-import bodyCare4 from "../../assets/bodyCareImages/bodyCare4.jpg";
-import bodyCare5 from "../../assets/bodyCareImages/bodyCare5.jpg";
-import bodyCare6 from "../../assets/bodyCareImages/bodyCare6.jpg";
-import bodyCare7 from "../../assets/bodyCareImages/bodyCare7.jpg";
 
-// ... import all other images
+import imageMap from "@/pages/imageMap";
+
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "@/redux/CartSlice";
 import { setBodyCareProducts } from "@/redux/BodyCareProductSlice";
 
-// Map the images to use dynamically
-const imageMap = {
-    "bodyCare1.jpg": bodyCare1,
-    "bodyCare2.jpg": bodyCare2,
-    "bodyCare3.jpg": bodyCare3,
-    "bodyCare4.jpg": bodyCare4,
-    "bodyCare5.jpg": bodyCare5,
-    "bodyCare6.jpg": bodyCare6,
-    "bodyCare7.jpg": bodyCare7,
 
-  };
 
 function BodyCare() {
   const dispatch = useDispatch();

@@ -11,25 +11,13 @@ import {
 import laptops from "../../data/laptops.json"
 
 import { Button } from "../../components/ui/button";
-import laptops1 from "../../assets/laptopsImages/laptops1.jpg";
-import laptops2 from "../../assets/laptopsImages/laptops2.jpg";
-import laptops3 from "../../assets/laptopsImages/laptops3.jpg";
-import laptops4 from "../../assets/laptopsImages/laptops4.jpg";
+import imageMap from "@/pages/imageMap";
 
 // ... import all other images
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "@/redux/CartSlice";
 import { setLaptopsProducts } from "@/redux/LaptopsProductSlice";
-
-// Map the images to use dynamically
-const imageMap = {
-    "laptops1.jpg": laptops1,
-    "laptops2.jpg": laptops2,
-    "laptops3.jpg": laptops3,
-    "laptops4.jpg": laptops4,
-  
-  };
 
 function Laptops() {
   const dispatch = useDispatch();

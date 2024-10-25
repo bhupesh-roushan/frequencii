@@ -2,26 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
-
-import bodyCare1 from "../assets/bodyCareImages/bodyCare1.jpg";
-import bodyCare2 from "../assets/bodyCareImages/bodyCare2.jpg";
-import bodyCare3 from "../assets/bodyCareImages/bodyCare3.jpg";
-import bodyCare4 from "../assets/bodyCareImages/bodyCare4.jpg";
-import bodyCare5 from "../assets/bodyCareImages/bodyCare5.jpg";
-import bodyCare6 from "../assets/bodyCareImages/bodyCare6.jpg";
-import bodyCare7 from "../assets/bodyCareImages/bodyCare7.jpg";
-
 import { Button } from "@/components/ui/button";
-
-const imageMap = {
-  "bodyCare1.jpg": bodyCare1,
-  "bodyCare2.jpg": bodyCare2,
-  "bodyCare3.jpg": bodyCare3,
-  "bodyCare4.jpg": bodyCare4,
-  "bodyCare5.jpg": bodyCare5,
-  "bodyCare6.jpg": bodyCare6,
-  "bodyCare7.jpg": bodyCare7,
-};
+import imageMap from "@/pages/imageMap";
 
 const BodyCareProductDetails = () => {
   const { id } = useParams();

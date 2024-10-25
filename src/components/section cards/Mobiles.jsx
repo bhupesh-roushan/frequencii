@@ -11,10 +11,7 @@ import {
 import mobiles from "../../data/mobiles.json"
 
 import { Button } from "../../components/ui/button";
-import mobiles1 from "../../assets/mobilesImages/mobiles1.jpg";
-import mobiles2 from "../../assets/mobilesImages/mobiles2.jpg";
-import mobiles3 from "../../assets/mobilesImages/mobiles3.jpg";
-import mobiles4 from "../../assets/mobilesImages/mobiles4.jpg";
+
 
 // ... import all other images
 import { useDispatch } from "react-redux";
@@ -23,13 +20,7 @@ import { addToCart } from "@/redux/CartSlice";
 import { setMobilesProducts } from "@/redux/MobilesProductSlice";
 
 // Map the images to use dynamically
-const imageMap = {
-    "mobiles1.jpg": mobiles1,
-    "mobiles2.jpg": mobiles2,
-    "mobiles3.jpg": mobiles3,
-    "mobiles4.jpg": mobiles4,
-  
-  };
+import imageMap from "@/pages/imageMap";
 
 function Mobiles() {
   const dispatch = useDispatch();

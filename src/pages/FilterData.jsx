@@ -4,6 +4,9 @@ import { useSelector } from "react-redux";
 
 import notFound from "../assets/images/notfound.jpg";
 
+
+
+
 const FilterData = () => {
   const filterProdcuts = useSelector((state) => state.product.filteredData);
   return (

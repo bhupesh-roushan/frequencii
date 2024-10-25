@@ -11,26 +11,13 @@ import {
 import hairCare from "../../data/hairCare.json";
 
 import { Button } from "../ui/button";
-import hairCare1 from "../../assets/hairCareImages/hairCare1.jpg";
-import hairCare2 from "../../assets/hairCareImages/hairCare2.jpg";
-import hairCare3 from "../../assets/hairCareImages/hairCare3.jpg";
-import hairCare4 from "../../assets/hairCareImages/hairCare4.jpg";
-import hairCare5 from "../../assets/hairCareImages/hairCare5.jpg";
+import imageMap from "@/pages/imageMap";
 
 // ... import all other images
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "@/redux/CartSlice";
 import { setHairCareProducts } from "@/redux/HairCareProductSlice";
-
-// Map the images to use dynamically
-const imageMap = {
-  "hairCare1.jpg": hairCare1,
-  "hairCare2.jpg": hairCare2,
-  "hairCare3.jpg": hairCare3,
-  "hairCare4.jpg": hairCare4,
-  "hairCare5.jpg": hairCare5,
-};
 
 function HairCare() {
   const dispatch = useDispatch();

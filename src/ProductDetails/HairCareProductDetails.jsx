@@ -3,27 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
 
-import hairCare1 from "../assets/hairCareImages/hairCare1.jpg";
-import hairCare2 from "../assets/hairCareImages/hairCare2.jpg";
-import hairCare3 from "../assets/hairCareImages/hairCare3.jpg";
-import hairCare4 from "../assets/hairCareImages/hairCare4.jpg";
-import hairCare5 from "../assets/hairCareImages/hairCare5.jpg";
-
+import imageMap from "@/pages/imageMap";
 
 import { Button } from "@/components/ui/button";
 
-const imageMap = {
-  "hairCare1.jpg": hairCare1,
-  "hairCare2.jpg": hairCare2,
-  "hairCare3.jpg": hairCare3,
-  "hairCare4.jpg": hairCare4,
-  "hairCare5.jpg": hairCare5,
-
-};
-
 const HairCareProductDetails = () => {
   const { id } = useParams();
-  const hairCareProducts = useSelector((state) => state.hairCareProducts.hairCareProducts);
+  const hairCareProducts = useSelector(
+    (state) => state.hairCareProducts.hairCareProducts
+  );
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -59,8 +47,12 @@ const HairCareProductDetails = () => {
               <h1 className="text-lg sm:text-2xl font-bold gradient-title">
                 {product.name}
               </h1>
-              <p className="text-md sm:text-xl font-semibold">Price: ₹{product.price}</p>
-              <p className="font-semibold text-sm sm:text-xl">Rating: {product.stars} ⭐</p>
+              <p className="text-md sm:text-xl font-semibold">
+                Price: ₹{product.price}
+              </p>
+              <p className="font-semibold text-sm sm:text-xl">
+                Rating: {product.stars} ⭐
+              </p>
               <Button
                 variant="outline"
                 className="shadow-md w-[100px] sm:w-full mt-5 shadow-blue-200"

@@ -2,20 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
+import imageMap from "@/pages/imageMap";
 
-import laptops1 from "../assets/laptopsImages/laptops1.jpg";
-import laptops2 from "../assets/laptopsImages/laptops2.jpg";
-import laptops3 from "../assets/laptopsImages/laptops3.jpg";
-import laptops4 from "../assets/laptopsImages/laptops4.jpg";
 
 import { Button } from "@/components/ui/button";
 
-const imageMap = {
-  "laptops1.jpg": laptops1,
-  "laptops2.jpg": laptops2,
-  "laptops3.jpg": laptops3,
-  "laptops4.jpg": laptops4,
-};
 
 const LaptopsProductDetails = () => {
   const { id } = useParams();

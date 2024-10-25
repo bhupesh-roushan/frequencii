@@ -7,123 +7,17 @@ import {
   increaseQuantity,
   decreaseQuantity,
 } from "../redux/CartSlice";
-
-// Import all images
-import product1 from "../assets/images/product1.jpg";
-import product2 from "../assets/images/product2.jpg";
-import product3 from "../assets/images/product3.jpg";
-import product4 from "../assets/images/product4.jpg";
-import product5 from "../assets/images/product5.jpg";
-import product6 from "../assets/images/product6.jpg";
-import product7 from "../assets/images/product7.jpg";
-import product8 from "../assets/images/product8.jpg";
-import product9 from "../assets/images/product9.jpg";
-import product10 from "../assets/images/product10.jpg";
-import men1 from "../assets/mens images/men1.jpg"
-import men2 from '../assets/mens images/men2.jpg';
-import men3 from '../assets/mens images/men3.jpg';
-import men4 from '../assets/mens images/men4.jpg';
-import men5 from '../assets/mens images/men5.jpg';
-import men6 from '../assets/mens images/men6.jpg';
-import men7 from '../assets/mens images/men7.jpg';
-import men8 from '../assets/mens images/men8.jpg';
-import men9 from '../assets/mens images/men9.jpg';
-import men10 from '../assets/mens images/men10.jpg';
-import men11 from '../assets/mens images/men11.jpg';
-import men12 from '../assets/mens images/men12.jpg';
-import women1 from "../assets/womenImages/women1.jpg";
-import women2 from "../assets/womenImages/women2.jpg";
-import women3 from "../assets/womenImages/women3.jpg";
-import women4 from "../assets/womenImages/women4.jpg";
-import women5 from "../assets/womenImages/women5.jpg";
-import women6 from "../assets/womenImages/women6.jpg";
-import women7 from "../assets/womenImages/women7.jpg";
-import women8 from "../assets/womenImages/women8.jpg";
-import women9 from "../assets/womenImages/women9.jpg";
-import women10 from "../assets/womenImages/women10.jpg";
-import women11 from "../assets/womenImages/women11.jpg";
-import women12 from "../assets/womenImages/women12.jpg";
-import women13 from "../assets/womenImages/women13.jpg";
-import women14 from "../assets/womenImages/women14.jpg";
-import women15 from "../assets/womenImages/women15.jpg";
-import women16 from "../assets/womenImages/women16.jpg";
-import women17 from "../assets/womenImages/women17.jpg";
-import women18 from "../assets/womenImages/women18.jpg";
-import women19 from "../assets/womenImages/women19.jpg";
-import women20 from "../assets/womenImages/women20.jpg";
-import women21 from "../assets/womenImages/women21.jpg";
-import women22 from "../assets/womenImages/women22.jpg";
-
-
-
-
 import { Button } from "../components/ui/button";
 import Modal from "../components/Modal";
 import ChangeAddress from "../components/ChangeAddress";
 import { useNavigate } from "react-router-dom";
-
-// Create an object to map image names to imports
-const imageMap = {
-  "product1.jpg": product1,
-  "product2.jpg": product2,
-  "product3.jpg": product3,
-  "product4.jpg": product4,
-  "product5.jpg": product5,
-  "product6.jpg": product6,
-  "product7.jpg": product7,
-  "product8.jpg": product8,
-  "product9.jpg": product9,
-  "product10.jpg": product10,
-  'men1.jpg': men1,
-  'men2.jpg': men2,
-  'men3.jpg': men3,
-  'men4.jpg': men4,
-  'men5.jpg': men5,
-  'men6.jpg': men6,
-  'men7.jpg': men7,
-  'men8.jpg': men8,
-  'men9.jpg': men9,
-  'men10.jpg': men10,
-  'men11.jpg': men11,
-  'men12.jpg': men12,
-  "women1.jpg": women1,
-  "women2.jpg": women2,
-  "women3.jpg": women3,
-  "women4.jpg": women4,
-  "women5.jpg": women5,
-  "women6.jpg": women6,
-  "women7.jpg": women7,
-  "women8.jpg": women8,
-  "women9.jpg": women9,
-  "women10.jpg": women10,
-  "women11.jpg": women11,
-  "women12.jpg": women12,
-  "women13.jpg": women13,
-  "women14.jpg": women14,
-  "women15.jpg": women15,
-  "women16.jpg": women16,
-  "women17.jpg": women17,
-  "women18.jpg": women18,
-  "women19.jpg": women19,
-  "women20.jpg": women20,
-  "women21.jpg": women21,
-  "women22.jpg": women22
-};
-
-
-
-
-// import all the images...
-
-
-
-
+import imageMap from "../pages/imageMap";
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const [address, setAddress] = useState("Avalahahlli,Bengaluru,560064");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="container mx-auto py-8 min-h-96 px-4 md:px-16 lg:px-24 shadow-lg shadow-blue-200 rounded-lg">
@@ -228,7 +122,7 @@ const Cart = () => {
               <Button
                 className="w-full shadow-sm shadow-blue-200 hover:animate-pulse"
                 variant="outline"
-                onClick={()=>navigate('/checkout')}
+                onClick={() => navigate("/checkout")}
               >
                 Proceed To Checkout
               </Button>

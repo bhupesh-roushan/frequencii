@@ -2,26 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
-
-import deodrants1 from "../assets/deodrantsImages/deodrants1.jpg";
-import deodrants2 from "../assets/deodrantsImages/deodrants2.jpg";
-import deodrants3 from "../assets/deodrantsImages/deodrants3.jpg";
-import deodrants4 from "../assets/deodrantsImages/deodrants4.jpg";
-import deodrants5 from "../assets/deodrantsImages/deodrants5.jpg";
-
-
-
+import imageMap from "@/pages/imageMap";
 import { Button } from "@/components/ui/button";
 
-const imageMap = {
-  "deodrants1.jpg": deodrants1,
-  "deodrants2.jpg": deodrants2,
-  "deodrants3.jpg": deodrants3,
-  "deodrants4.jpg": deodrants4,
-  "deodrants5.jpg": deodrants5,
-
-
-};
 
 const DeodrantsProductDetails = () => {
   const { id } = useParams();

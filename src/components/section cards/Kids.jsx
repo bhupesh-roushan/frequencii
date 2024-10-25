@@ -9,28 +9,14 @@ import {
 } from "../../components/ui/card";
 
 import kids from "../../data/kids.json";
-import { Button } from "../../components/ui/button";
-import kids1 from "../../assets/kidsImages/kids1.jpg";
-import kids2 from "../../assets/kidsImages/kids2.jpg";
-import kids3 from "../../assets/kidsImages/kids3.jpg";
-import kids4 from "../../assets/kidsImages/kids4.jpg";
-import kids5 from "../../assets/kidsImages/kids5.jpg";
-import kids6 from "../../assets/kidsImages/kids6.jpg";
 
+import imageMap from "@/pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "@/redux/CartSlice";
 import { setKidsProducts } from "@/redux/KidsProductSlice";
 
 // Map the images to use dynamically
-const imageMap = {
-    "kids1.jpg": kids1,
-    "kids2.jpg": kids2,
-    "kids3.jpg": kids3,
-    "kids4.jpg": kids4,
-    "kids5.jpg": kids5,
-    "kids6.jpg": kids6,
-  };
 
 function Kids() {
   const dispatch = useDispatch();

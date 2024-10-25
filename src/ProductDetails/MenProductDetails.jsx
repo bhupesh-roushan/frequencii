@@ -3,34 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart } from "../redux/CartSlice";
 
-import men1 from "../assets/mens images/men1.jpg";
-import men2 from "../assets/mens images/men2.jpg";
-import men3 from "../assets/mens images/men3.jpg";
-import men4 from "../assets/mens images/men4.jpg";
-import men5 from "../assets/mens images/men5.jpg";
-import men6 from "../assets/mens images/men6.jpg";
-import men7 from "../assets/mens images/men7.jpg";
-import men8 from "../assets/mens images/men8.jpg";
-import men9 from "../assets/mens images/men9.jpg";
-import men10 from "../assets/mens images/men10.jpg";
-import men11 from "../assets/mens images/men11.jpg";
-import men12 from "../assets/mens images/men12.jpg"
+import imageMap from "@/pages/imageMap";
 import { Button } from "@/components/ui/button";
 
-const imageMap = {
-  "men1.jpg": men1,
-  "men2.jpg": men2,
-  "men3.jpg": men3,
-  "men4.jpg": men4,
-  "men5.jpg": men5,
-  "men6.jpg": men6,
-  "men7.jpg": men7,
-  "men8.jpg": men8,
-  "men9.jpg": men9,
-  "men10.jpg": men10,
-  "men11.jpg": men11,
-  "men12.jpg": men12,
-};
+
 
 const MenProductDetails = () => {
   const { id } = useParams();

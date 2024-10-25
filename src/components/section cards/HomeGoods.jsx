@@ -11,10 +11,7 @@ import {
 import homeGoods from "../../data/homeGoods.json"
 
 import { Button } from "../ui/button";
-import homeGoods1 from "../../assets/homeGoodsImages/homeGoods1.jpg";
-import homeGoods2 from "../../assets/homeGoodsImages/homeGoods2.jpg";
-import homeGoods3 from "../../assets/homeGoodsImages/homeGoods3.jpg";
-import homeGoods4 from "../../assets/homeGoodsImages/homeGoods4.jpg";
+
 
 // ... import all other images
 import { useDispatch } from "react-redux";
@@ -23,13 +20,7 @@ import { addToCart } from "@/redux/CartSlice";
 import { setHomeGoodsProducts } from "@/redux/HomeGoodsProductSlice";
 
 // Map the images to use dynamically
-const imageMap = {
-    "homeGoods1.jpg": homeGoods1,
-    "homeGoods2.jpg": homeGoods2,
-    "homeGoods3.jpg": homeGoods3,
-    "homeGoods4.jpg": homeGoods4,
-  
-  };
+import imageMap from "@/pages/imageMap";
 
 function HomeGoods() {
   const dispatch = useDispatch();
