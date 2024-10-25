@@ -7,6 +7,7 @@ import imageMap from "../pages/imageMap";
 
 const WomenProductDetails = () => {
   const { id } = useParams();
+  //redux
   const womenProducts = useSelector(
     (state) => state.womenProducts.womenProducts
   );
