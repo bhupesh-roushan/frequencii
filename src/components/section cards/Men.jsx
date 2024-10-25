@@ -14,7 +14,7 @@ import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setMenProducts } from "../../redux/menProductSlice";
+import { setMenProducts } from "../../redux/MenProductSlice";
 
 function Men() {
   const dispatch = useDispatch();
