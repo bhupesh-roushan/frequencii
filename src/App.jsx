@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppImport from "./AppImport"; 
 import { useState } from "react";
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <BrowserRouter>
       <AppImport.Navbar />
       <Routes>
-        
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/" element={<AppImport.Home />} />
         <Route path="/cart" element={<AppImport.Cart />} />
         <Route path="/checkout" element={<AppImport.Checkout setOrder={setOrder} />} />

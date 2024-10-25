@@ -8,6 +8,7 @@ import {
   FaHandsHelping,
   FaBullhorn,
   FaRupeeSign,
+  FaInfoCircle,
 } from "react-icons/fa";
 
 import { Separator } from "../components/ui/separator";
@@ -50,10 +51,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="flex flex-row gap-2 items-center  text-gray-500 hover:text-black">
+                <Link to={"/about"} className="flex flex-row items-center justify-center gap-2">
                 <span>
-                  <FaStore className="text-slate-500" />
+                  <FaInfoCircle className="text-slate-500" />
                 </span>
-                <span>Store</span>
+                <span>About</span>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import CartSlice from "../redux/CartSlice";
 import ProductSlice from "../redux/ProductSlice";
-import menProductSlice from "../redux/menProductSlice"; 
+import menProductSlice from "../redux/MenProductSlice"; 
 import womenProductSlice from "../redux/WomenProductSlice"
 import kidsProductSlice from "../redux/KidsProductSlice"
 import mobilesProductSlice from "../redux/MobilesProductSlice"
