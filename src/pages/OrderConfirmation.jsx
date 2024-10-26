@@ -37,14 +37,14 @@ const OrderConfirmation = ({ order }) => {
           <span>Total Price:</span>
           <span className="font-semibold"> ₹ {order.totalPrice}</span>
         </div>
-        <div className="mt-6 flex justify-evenly">
-          <Button variant="destructive" className="shadow-md shadow-blue-200">
+        <div className="flex sm:flex-row  flex-col justify-between p-20">
+          <Button variant="destructive" className=" w-36 shadow-md mb-5 shadow-blue-200">
             Order Tracking
           </Button>
           <Button
             onClick={() => navigate("/")}
             variant="outline"
-            className="shadow-md shadow-blue-200"
+            className="shadow-md w-36 shadow-blue-200"
           >
             Continue Shopping
           </Button>

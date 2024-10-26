@@ -46,17 +46,17 @@ const Cart = () => {
                       <img
                         src={imageMap[products.image]}
                         alt={products.name}
-                        className="w-16 h-16 object-contain rounded-2xl"
+                        className="w-16 h-16 ml-4 object-contain rounded-2xl"
                       />
 
                       <div className="flex ml-4">
-                        <h3 className="text-lg font-semibold">
+                        <h3 className=" text-sm text-center sm:text-lg font-semibold">
                           {products.name}
                         </h3>
                       </div>
                     </div>
-                    <div className="flex space-x-8 items-center">
-                      <p>{products.price} ₹ </p>
+                    <div className="flex sm:text-lg text-sm space-x-8 items-center">
+                      <p className="text-sm sm:text-lg">{products.price}₹ </p>
                       <div className="flex items-center justify-center border">
                         <button
                           className="text-xl font-bold px-1.5 border-r"

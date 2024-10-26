@@ -48,7 +48,7 @@ const Home = () => {
           <Carousel
             plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 1000,
               }),
             ]}
           >
@@ -57,7 +57,7 @@ const Home = () => {
                 <CarouselItem key={index}>
                   <img
                     src={image}
-                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px] object-fill rounded-lg transition-all duration-300"
+                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px]  object-fill rounded-lg transition-all duration-300"
                   />
                 </CarouselItem>
               ))}
@@ -71,10 +71,13 @@ const Home = () => {
           Top Products
         </h1>
         <Carousel
-          plugins={[plugin.current]}
+          
           className="w-full mr-10 p-10 "
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
+          plugins={[
+            Autoplay({
+              delay: 1000,
+            })
+          ]}
         >
           <CarouselContent className="flex space-x-4 gap-5 mb-5">
             {products.products.map((product, index) => (

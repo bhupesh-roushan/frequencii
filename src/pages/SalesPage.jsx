@@ -70,13 +70,13 @@ function SalesPage() {
           </CardContent>
         </Card>
       </div>
-      <div className="shadow-md shadow-blue-200 p-2 rounded-lg max-w-full overflow-hidden">
-        <h2 className="text-3xl font-bold text-center mb-8">
+      <div className="shadow-md shadow-blue-200 p-10 rounded-lg max-w-full overflow-hidden ">
+        <h2 className="text-3xl font-bold text-center mb-8 gradient-title">
           Top Deals of the Week
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-          {products.products.slice(2, 7).map((product, index) => (
+          {products.products.slice(1, 10).map((product, index) => (
             <div key={index} className="w-full max-w-full">
               <TopProductCard
                 product={product}

@@ -24,7 +24,7 @@ function HelpPage() {
         </h1>
 
         {/* FAQ Section */}
-        <div className="shadow-md shadow-blue-200 rounded-lg p-10">
+        <div className=" rounded-lg p-10">
           <Card className="border-none shadow-sm shadow-blue-200">
             <CardHeader>
               <CardTitle className="text-md sm:text-xl">
@@ -97,8 +97,8 @@ function HelpPage() {
         </div>
 
         {/* Contact Section */}
-        <div className="shadow-md shadow-blue-200 rounded-lg p-10">
-          <Card className="border-none shadow-sm shadow-blue-200">
+        <div className=" rounded-lg p-10">
+          <Card className="border-none">
             <CardHeader>
               <CardTitle className="text-md sm:text-xl">
                 Need More Help?

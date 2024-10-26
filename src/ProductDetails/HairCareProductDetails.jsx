@@ -35,7 +35,7 @@ const HairCareProductDetails = () => {
     <div className="flex flex-col items-center justify-center gap-20 m-10">
       <div className="flex flex-col w-full items-center shadow-lg shadow-blue-200 rounded-lg">
         {product ? (
-          <div className="flex flex-col sm:flex-row w-[90%] gap-5 shadow-lg shadow-blue-200 p-10 m-10 rounded-lg justify-evenly">
+          <div className="flex flex-col sm:flex-row w-[90%] gap-5 sm:shadow-lg sm:shadow-blue-200 p-10 m-10 rounded-lg justify-evenly">
             <div className="flex justify-center items-center">
               <img
                 src={imageMap[product.image]}
