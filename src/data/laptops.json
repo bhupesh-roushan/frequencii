@@ -4,27 +4,31 @@
     "image": "laptops1.jpg",
     "name": "MacBook Air",
     "price": "76999",
-    "stars": 4.8
+    "stars": 4.8,
+    "category": "laptops"
   },
   {
     "id": 2,
     "image": "laptops2.jpg",
     "name": "MacBook Pro 13",
     "price": "84499",
-    "stars": 4.6
+    "stars": 4.6,
+    "category": "laptops"
   },
   {
     "id": 3,
     "image": "laptops3.jpg",
     "name": "MacBook Pro 16",
     "price": "94399",
-    "stars": 4.7
+    "stars": 4.7,
+    "category": "laptops"
   },
   {
     "id": 4,
     "image": "laptops4.jpg",
     "name": "Windows i7",
     "price": "44499",
-    "stars": 4.1
+    "stars": 4.1,
+    "category": "laptops"
   }
 ]

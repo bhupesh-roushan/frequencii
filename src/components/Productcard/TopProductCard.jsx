@@ -26,7 +26,7 @@ const TopProductCard = ({ product }) => {
   };
 
   return (
-    <Link to={`/product/${product.id}`} className="w-full h-full">
+    <Link to={`/${product.category}/product/${product.id}`} className="w-full h-full">
       <Card className="shadow-md shadow-blue-200 p-1 rounded-lg max-w-[200px] h-full flex flex-col cursor-pointer">
         {/* Card Header */}
         <CardHeader>

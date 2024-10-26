@@ -4,27 +4,31 @@
     "image": "homeGoods1.jpg",
     "name": "Night Lamp",
     "price": "1999",
-    "stars": 4.8
+    "stars": 4.8,
+    "category": "homeGoods"
   },
   {
     "id": 2,
     "image": "homeGoods2.jpg",
     "name": "Decor Glass",
     "price": "699",
-    "stars": 4.6
+    "stars": 4.6,
+    "category": "homeGoods"
   },
   {
     "id": 3,
     "image": "homeGoods3.jpg",
     "name": "Frequencii TV 43",
     "price": "24399",
-    "stars": 4.7
+    "stars": 4.7,
+    "category": "homeGoods"
   },
   {
     "id": 4,
     "image": "homeGoods4.jpg",
     "name": "Frequencii Fridge",
     "price": "14499",
-    "stars": 4.1
+    "stars": 4.1,
+    "category": "homeGoods"
   }
 ]

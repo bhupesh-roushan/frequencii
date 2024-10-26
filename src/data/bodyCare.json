@@ -4,48 +4,55 @@
     "image": "bodyCare1.jpg",
     "name": "Face Cream",
     "price": "399",
-    "stars": 4.8
+    "stars": 4.8,
+    "category": "bodyCare"
   },
   {
     "id": 2,
     "image": "bodyCare2.jpg",
-    "name": "FaceWash",
+    "name": "Face Wash",
     "price": "299",
-    "stars": 4.6
+    "stars": 4.6,
+    "category": "bodyCare"
   },
   {
     "id": 3,
     "image": "bodyCare3.jpg",
-    "name": "Mosturizer",
+    "name": "Moisturizer",
     "price": "699",
-    "stars": 4.7
+    "stars": 4.7,
+    "category": "bodyCare"
   },
   {
     "id": 4,
     "image": "bodyCare4.jpg",
     "name": "Sandal Soap",
     "price": "149",
-    "stars": 4.1
+    "stars": 4.1,
+    "category": "bodyCare"
   },
   {
     "id": 5,
     "image": "bodyCare5.jpg",
     "name": "Body Wash",
     "price": "249",
-    "stars": 4.1
+    "stars": 4.1,
+    "category": "bodyCare"
   },
   {
     "id": 6,
     "image": "bodyCare6.jpg",
     "name": "Soap Combo",
     "price": "279",
-    "stars": 4.1
+    "stars": 4.1,
+    "category": "bodyCare"
   },
   {
     "id": 7,
     "image": "bodyCare7.jpg",
     "name": "Soap Pack of 3",
     "price": "349",
-    "stars": 4.1
+    "stars": 4.1,
+    "category": "bodyCare"
   }
 ]

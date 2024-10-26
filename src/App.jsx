@@ -26,11 +26,19 @@ function App() {
         <Route path="/fashion/kids" element={<AppImport.Kids />} />
         <Route path="/electronics/mobiles" element={<AppImport.Mobiles />} />
         <Route path="/electronics/laptops" element={<AppImport.Laptops />} />
-        <Route path="/electronics/homeGoods" element={<AppImport.HomeGoods />} />
+        <Route path="/electronics/homeGoods" element={<AppImport.HomeGoods />} /
+        >
         
         <Route path="/beauty/bodyCare" element={<AppImport.BodyCare />} />
         <Route path="/beauty/hairCare" element={<AppImport.HairCare />} />
         <Route path="/beauty/deodrants" element={<AppImport.Deodrants />} />
+
+
+
+
+
+
+        
         <Route path="/men/product/:id" element={<AppImport.MenProductDetails />} />
         <Route path="/women/product/:id" element={<AppImport.WomenProductDetails />} />
         <Route path="/kids/product/:id" element={<AppImport.KidsProductDetails />} />
@@ -40,6 +48,10 @@ function App() {
         <Route path="/bodyCare/product/:id" element={<AppImport.BodyCareProductDetails />} />
         <Route path="/hairCare/product/:id" element={<AppImport.HairCareProductDetails />} />
         <Route path="/deodrants/product/:id" element={<AppImport.DeodrantsProductDetails />} />
+
+
+
+
 
         
       </Routes>

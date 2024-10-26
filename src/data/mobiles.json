@@ -4,27 +4,31 @@
     "image": "mobiles1.jpg",
     "name": "Android 1",
     "price": "16999",
-    "stars": 4.5
+    "stars": 4.5,
+    "category": "mobiles"
   },
   {
     "id": 2,
     "image": "mobiles2.jpg",
     "name": "Iphone 14 Blue",
     "price": "44499",
-    "stars": 4.2
+    "stars": 4.2,
+    "category": "mobiles"
   },
   {
     "id": 3,
     "image": "mobiles3.jpg",
     "name": "Iphone 14 Pink",
     "price": "44399",
-    "stars": 4.6
+    "stars": 4.6,
+    "category": "mobiles"
   },
   {
     "id": 4,
     "image": "mobiles4.jpg",
     "name": "Iphone 15 Blue",
     "price": "54499",
-    "stars": 4.8
+    "stars": 4.8,
+    "category": "mobiles"
   }
 ]
