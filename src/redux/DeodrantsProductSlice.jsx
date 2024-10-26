@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   deodrantsProducts: [],
-  searchTerm: '',
-  filteredData: [],
+  deodrantsSearchTerm: '',
+  deodrantsfilteredData: [],
 };
 
 const deodrantsProductSlice = createSlice({
@@ -12,11 +12,12 @@ const deodrantsProductSlice = createSlice({
   reducers: {
     setDeodrantsProducts(state, action) {
       state.deodrantsProducts = action.payload;
+      state.deodrantsfilteredData = action.payload;
     },
     setDeodrantsSearchTerm(state, action) {
-      state.searchTerm = action.payload;
-      state.filteredData = state.deodrantsProducts.filter(product =>
-        product.name.toLowerCase().includes(state.searchTerm.toLowerCase())
+      state.deodrantsSearchTerm = action.payload;
+      state.deodrantsfilteredData = state.deodrantsProducts.filter((product) =>
+        product.name.toLowerCase().includes(state.deodrantsSearchTerm.toLowerCase())
       );
     },
   },

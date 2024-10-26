@@ -8,21 +8,41 @@ import Modal from "./Modal";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import { setSearchTerm } from "../redux/ProductSlice";
+import { setBodyCareSearchTerm } from "../redux/BodyCareProductSlice";
 import frequencii from "../assets/images/frequencii.svg";
+import { setDeodrantsSearchTerm } from "../redux/DeodrantsProductSlice";
+import { setHairCareSearchTerm } from "../redux/HairCareProductSlice";
+import { setHomeGoodsSearchTerm } from "../redux/HomeGoodsProductSlice";
+import { setKidsSearchTerm } from "../redux/KidsProductSlice";
+import { setLaptopsSearchTerm } from "../redux/LaptopsProductSlice";
+import { setMenSearchTerm } from "../redux/MenProductSlice";
+import { setMobilesSearchTerm } from "../redux/MobilesProductSlice";
+import { setWomenSearchTerm } from "../redux/WomenProductSlice";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
   const [search, setSearch] = useState();
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+
+  
   const handleSearch = (e) => {
     e.preventDefault();
     dispatch(setSearchTerm(search));
+    dispatch(setBodyCareSearchTerm(search));
+    dispatch(setDeodrantsSearchTerm(search))
+    dispatch(setHairCareSearchTerm(search))
+    dispatch(setHomeGoodsSearchTerm(search))
+    dispatch(setKidsSearchTerm(search))
+    dispatch(setLaptopsSearchTerm(search))
+    dispatch(setMenSearchTerm(search))
+    dispatch(setMobilesSearchTerm(search))
+    dispatch(setWomenSearchTerm(search))
     navigate("/filter-data");
   };
+  
 
   const openSignUpForm = () => {
     setIsLogin(false);
@@ -35,6 +55,7 @@ const Navbar = () => {
   };
 
   const products = useSelector((state) => state.cart.products);
+
   return (
     <nav className="bg-white shadow-md shadow-blue-200  min-w-full max-w-full mb-5 rounded-sm pb-2">
       <div className="flex flex-row justify-center items-center pt-0 pb-0">
@@ -66,11 +87,6 @@ const Navbar = () => {
           {/* cart login register */}
 
           <div className="flex  flex-row justify-center items-center space-x-5 ">
-            {/* <Link to="/cart">
-              <FaShoppingCart className="text-3xl text-gray-600 hover:scale-105 transition-all delay-120 ease-in "
-              {products.length>0?products.length:}
-              />
-            </Link> */}
             <Link to="/cart">
               <div className="relative">
                 <FaShoppingCart className=" text-xl sm:text-3xl text-gray-600 hover:scale-105 transition-all delay-120 ease-in" />
@@ -99,7 +115,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* links below  */}
 
       <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
         {isLogin ? (

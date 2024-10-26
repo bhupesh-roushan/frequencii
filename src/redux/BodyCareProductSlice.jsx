@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   bodyCareProducts: [],
-  searchTerm: '',
-  filteredData: [],
+  bodyCareSearchTerm: '',
+  bodyCarefilteredData: [],
 };
 
 const bodyCareProductSlice = createSlice({
@@ -12,17 +12,16 @@ const bodyCareProductSlice = createSlice({
   reducers: {
     setBodyCareProducts(state, action) {
       state.bodyCareProducts = action.payload;
+      state.bodyCarefilteredData = action.payload; // Initialize filtered data on load
     },
     setBodyCareSearchTerm(state, action) {
-      state.searchTerm = action.payload;
-      state.filteredData = state.bodyCareProducts.filter(product =>
-        product.name.toLowerCase().includes(state.searchTerm.toLowerCase())
+      state.bodyCareSearchTerm = action.payload;
+      state.bodyCarefilteredData = state.bodyCareProducts.filter((product) =>
+        product.name.toLowerCase().includes(state.bodyCareSearchTerm.toLowerCase())
       );
     },
   },
 });
-
-
 
 export const { setBodyCareProducts, setBodyCareSearchTerm } = bodyCareProductSlice.actions;
 export default bodyCareProductSlice.reducer;
