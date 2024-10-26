@@ -80,7 +80,7 @@ const Home = () => {
           ]}
         >
           <CarouselContent className="flex space-x-4 gap-5 mb-5">
-            {products.products.map((product, index) => (
+            {products.products.slice(1,10).map((product, index) => (
               <CarouselItem
                 key={index}
                 className="basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"

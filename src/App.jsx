@@ -16,7 +16,7 @@ function App() {
         <Route path="/checkout" element={<AppImport.Checkout setOrder={setOrder} />} />
         <Route path="/orderConfirmation" element={<AppImport.OrderConfirmation order={order} />} />
         <Route path="/filter-data" element={<AppImport.FilterData />} />
-        <Route path="/product/:id" element={<AppImport.ProductDetail />} />
+        <Route path="topProducts/product/:id" element={<AppImport.ProductDetail />} />
         <Route path="/contact" element={<AppImport.ContactPage />} />
         <Route path="/help" element={<AppImport.HelpPage />} />
         <Route path="/advertise" element={<AppImport.AdvertisePage />} />

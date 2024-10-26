@@ -68,5 +68,556 @@
     "name": "Jeans",
     "price": "5,199",
     "stars": 4.8
+  },
+  {
+    "id": 1,
+    "image": "deodrants1.jpg",
+    "name": "Classic Perfume Deodrant",
+    "price": "899",
+    "stars": 4.8,
+    "category": "deodrants"
+  },
+  {
+    "id": 2,
+    "image": "deodrants2.jpg",
+    "name": "Musk Perfume Deodrant",
+    "price": "1299",
+    "stars": 4.6,
+    "category": "deodrants"
+  },
+  {
+    "id": 3,
+    "image": "deodrants3.jpg",
+    "name": "Amber Perfume Deodrant",
+    "price": "1699",
+    "stars": 4.7,
+    "category": "deodrants"
+  },
+  {
+    "id": 4,
+    "image": "deodrants4.jpg",
+    "name": "Smoky Perfume Deodrant",
+    "price": "1149",
+    "stars": 4.1,
+    "category": "deodrants"
+  },
+  {
+    "id": 5,
+    "image": "deodrants5.jpg",
+    "name": "Intense Perfume Deodrant",
+    "price": "2249",
+    "stars": 4.1,
+    "category": "deodrants"
+  },{
+    "id": 1,
+    "image": "hairCare1.jpg",
+    "name": "Hair Shampoo",
+    "price": "349",
+    "stars": 4.8,
+    "category": "hairCare"
+  },
+  {
+    "id": 2,
+    "image": "hairCare2.jpg",
+    "name": "Jojoba Oil 200ml",
+    "price": "299",
+    "stars": 4.6,
+    "category": "hairCare"
+  },
+  {
+    "id": 3,
+    "image": "hairCare3.jpg",
+    "name": "Coconut Oil 300ml",
+    "price": "199",
+    "stars": 4.7,
+    "category": "hairCare"
+  },
+  {
+    "id": 4,
+    "image": "hairCare4.jpg",
+    "name": "Hair Conditioner",
+    "price": "349",
+    "stars": 4.1,
+    "category": "hairCare"
+  },
+  {
+    "id": 5,
+    "image": "hairCare5.jpg",
+    "name": "Shampoo & Conditioner Combo",
+    "price": "599",
+    "stars": 4.1,
+    "category": "hairCare"
+  },
+  {
+    "id": 1,
+    "image": "homeGoods1.jpg",
+    "name": "Night Lamp",
+    "price": "1999",
+    "stars": 4.8,
+    "category": "homeGoods"
+  },
+  {
+    "id": 2,
+    "image": "homeGoods2.jpg",
+    "name": "Decor Glass",
+    "price": "699",
+    "stars": 4.6,
+    "category": "homeGoods"
+  },
+  {
+    "id": 3,
+    "image": "homeGoods3.jpg",
+    "name": "Frequencii TV 43",
+    "price": "24399",
+    "stars": 4.7,
+    "category": "homeGoods"
+  },
+  {
+    "id": 4,
+    "image": "homeGoods4.jpg",
+    "name": "Frequencii Fridge",
+    "price": "14499",
+    "stars": 4.1,
+    "category": "homeGoods"
+  },
+  {
+    "id": 1,
+    "image": "kids1.jpg",
+    "name": "Boys Jeans",
+    "price": "1399",
+    "stars": 4.5,
+    "category": "kids"
+  },
+  {
+    "id": 2,
+    "image": "kids2.jpg",
+    "name": "Girls Jeans",
+    "price": "1499",
+    "stars": 4.2,
+    "category": "kids"
+  },
+  {
+    "id": 3,
+    "image": "kids3.jpg",
+    "name": "Boys Olive T-Shirt",
+    "price": "399",
+    "stars": 4.6,
+    "category": "kids"
+  },
+  {
+    "id": 4,
+    "image": "kids4.jpg",
+    "name": "Girls Pink T-Shirt",
+    "price": "499",
+    "stars": 4.8,
+    "category": "kids"
+  },
+  {
+    "id": 5,
+    "image": "kids5.jpg",
+    "name": "Girls Shoe",
+    "price": "1299",
+    "stars": 4.3,
+    "category": "kids"
+  },
+  {
+    "id": 6,
+    "image": "kids6.jpg",
+    "name": "Boys White Shoe",
+    "price": "2199",
+    "stars": 4.5,
+    "category": "kids"
+  },
+  {
+    "id": 1,
+    "image": "laptops1.jpg",
+    "name": "MacBook Air",
+    "price": "76999",
+    "stars": 4.8,
+    "category": "laptops"
+  },
+  {
+    "id": 2,
+    "image": "laptops2.jpg",
+    "name": "MacBook Pro 13",
+    "price": "84499",
+    "stars": 4.6,
+    "category": "laptops"
+  },
+  {
+    "id": 3,
+    "image": "laptops3.jpg",
+    "name": "MacBook Pro 16",
+    "price": "94399",
+    "stars": 4.7,
+    "category": "laptops"
+  },
+  {
+    "id": 4,
+    "image": "laptops4.jpg",
+    "name": "Windows i7",
+    "price": "44499",
+    "stars": 4.1,
+    "category": "laptops"
+  },
+  {
+    "id": 1,
+    "image": "men1.jpg",
+    "name": "Checked Shirt",
+    "price": "1299",
+    "stars": 4.5,
+    "category": "men"
+  },
+  {
+    "id": 2,
+    "image": "men2.jpg",
+    "name": "Casual Shoe",
+    "price": "4999",
+    "stars": 4.2,
+    "category": "men"
+  },
+  {
+    "id": 3,
+    "image": "men3.jpg",
+    "name": "Formal Shoe",
+    "price": "3499",
+    "stars": 4.6,
+    "category": "men"
+  },
+  {
+    "id": 4,
+    "image": "men4.jpg",
+    "name": "Casual Short",
+    "price": "1499",
+    "stars": 4.8,
+    "category": "men"
+  },
+  {
+    "id": 5,
+    "image": "men5.jpg",
+    "name": "Running Shoes",
+    "price": "3599",
+    "stars": 4.3,
+    "category": "men"
+  },
+  {
+    "id": 6,
+    "image": "men6.jpg",
+    "name": "Red Checked Shirt",
+    "price": "1999",
+    "stars": 4.5,
+    "category": "men"
+  },
+  {
+    "id": 7,
+    "image": "men7.jpg",
+    "name": "Blue Jeans",
+    "price": "3199",
+    "stars": 4.7,
+    "category": "men"
+  },
+  {
+    "id": 8,
+    "image": "men8.jpg",
+    "name": "Black T-Shirt",
+    "price": "1199",
+    "stars": 4.4,
+    "category": "men"
+  },
+  {
+    "id": 9,
+    "image": "men9.jpg",
+    "name": "White T-Shirt",
+    "price": "1199",
+    "stars": 4.1,
+    "category": "men"
+  },
+  {
+    "id": 10,
+    "image": "men10.jpg",
+    "name": "Yellow T-Shirt",
+    "price": "1199",
+    "stars": 4.6,
+    "category": "men"
+  },
+  {
+    "id": 11,
+    "image": "men11.jpg",
+    "name": "Causal Jacket",
+    "price": "4999",
+    "stars": 4.3,
+    "category": "men"
+  },
+  {
+    "id": 12,
+    "image": "men12.jpg",
+    "name": "Running Shoe",
+    "price": "4499",
+    "stars": 4.2,
+    "category": "men"
+  },
+  {
+    "id": 1,
+    "image": "mobiles1.jpg",
+    "name": "Android 1",
+    "price": "16999",
+    "stars": 4.5,
+    "category": "mobiles"
+  },
+  {
+    "id": 2,
+    "image": "mobiles2.jpg",
+    "name": "Iphone 14 Blue",
+    "price": "44499",
+    "stars": 4.2,
+    "category": "mobiles"
+  },
+  {
+    "id": 3,
+    "image": "mobiles3.jpg",
+    "name": "Iphone 14 Pink",
+    "price": "44399",
+    "stars": 4.6,
+    "category": "mobiles"
+  },
+  {
+    "id": 4,
+    "image": "mobiles4.jpg",
+    "name": "Iphone 15 Blue",
+    "price": "54499",
+    "stars": 4.8,
+    "category": "mobiles"
+  },
+  {
+    "id": 1,
+    "image": "women1.jpg",
+    "name": "Blue Jeans",
+    "price": "1499",
+    "stars": 4.5,
+    "category": "women"
+  },
+  {
+    "id": 2,
+    "image": "women2.jpg",
+    "name": "Floral Top",
+    "price": "899",
+    "stars": 4.2,
+    "category": "women"
+  },
+  {
+    "id": 3,
+    "image": "women3.jpg",
+    "name": "Printed T-Shirt",
+    "price": "699",
+    "stars": 4.6,
+    "category": "women"
+  },
+  {
+    "id": 4,
+    "image": "women4.jpg",
+    "name": "Casual Floral Top",
+    "price": "599",
+    "stars": 4.8,
+    "category": "women"
+  },
+  {
+    "id": 5,
+    "image": "women5.jpg",
+    "name": "Black Heels",
+    "price": "1299",
+    "stars": 4.3,
+    "category": "women"
+  },
+  {
+    "id": 6,
+    "image": "women6.jpg",
+    "name": "White Heels",
+    "price": "1199",
+    "stars": 4.5,
+    "category": "women"
+  },
+  {
+    "id": 7,
+    "image": "women7.jpg",
+    "name": "Grey Floral Dress",
+    "price": "2199",
+    "stars": 4.7,
+    "category": "women"
+  },
+  {
+    "id": 8,
+    "image": "women8.jpg",
+    "name": "White&Blue Dress",
+    "price": "1899",
+    "stars": 4.4,
+    "category": "women"
+  },
+  {
+    "id": 9,
+    "image": "women9.jpg",
+    "name": "Casual Hoodie",
+    "price": "1799",
+    "stars": 4.1,
+    "category": "women"
+  },
+  {
+    "id": 10,
+    "image": "women10.jpg",
+    "name": "Casual Bomber Jacket",
+    "price": "2999",
+    "stars": 4.6,
+    "category": "women"
+  },
+  {
+    "id": 11,
+    "image": "women11.jpg",
+    "name": "Leather Jacket",
+    "price": "4799",
+    "stars": 4.3,
+    "category": "women"
+  },
+  {
+    "id": 12,
+    "image": "women12.jpg",
+    "name": "Sports Shoe",
+    "price": "2499",
+    "stars": 4.2,
+    "category": "women"
+  },
+  {
+    "id": 13,
+    "image": "women13.jpg",
+    "name": "Casual Shoe",
+    "price": "2299",
+    "stars": 4.4,
+    "category": "women"
+  },
+  {
+    "id": 14,
+    "image": "women14.jpg",
+    "name": "Leather Boot",
+    "price": "3499",
+    "stars": 4.5,
+    "category": "women"
+  },
+  {
+    "id": 15,
+    "image": "women15.jpg",
+    "name": "Casual Flip Flop",
+    "price": "599",
+    "stars": 4.6,
+    "category": "women"
+  },
+  {
+    "id": 16,
+    "image": "women16.jpg",
+    "name": "Slipper",
+    "price": "499",
+    "stars": 4.7,
+    "category": "women"
+  },
+  {
+    "id": 17,
+    "image": "women17.jpg",
+    "name": "Casual Slide",
+    "price": "899",
+    "stars": 4.3,
+    "category": "women"
+  },
+  {
+    "id": 18,
+    "image": "women18.jpg",
+    "name": "Blue Crop Top",
+    "price": "599",
+    "stars": 4.5,
+    "category": "women"
+  },
+  {
+    "id": 19,
+    "image": "women19.jpg",
+    "name": "Pink T-Shirt",
+    "price": "599",
+    "stars": 4.2,
+    "category": "women"
+  },
+  {
+    "id": 20,
+    "image": "women20.jpg",
+    "name": "Lime T-Shirt",
+    "price": "599",
+    "stars": 4.4,
+    "category": "women"
+  },
+  {
+    "id": 21,
+    "image": "women21.jpg",
+    "name": "Red Crop Top",
+    "price": "799",
+    "stars": 4.6,
+    "category": "women"
+  },
+  {
+    "id": 22,
+    "image": "women22.jpg",
+    "name": "Green T-Shirt",
+    "price": "599",
+    "stars": 4.3,
+    "category": "women"
+  },
+  {
+    "id": 1,
+    "image": "bodyCare1.jpg",
+    "name": "Face Cream",
+    "price": "399",
+    "stars": 4.8,
+    "category": "bodyCare"
+  },
+  {
+    "id": 2,
+    "image": "bodyCare2.jpg",
+    "name": "Face Wash",
+    "price": "299",
+    "stars": 4.6,
+    "category": "bodyCare"
+  },
+  {
+    "id": 3,
+    "image": "bodyCare3.jpg",
+    "name": "Moisturizer",
+    "price": "699",
+    "stars": 4.7,
+    "category": "bodyCare"
+  },
+  {
+    "id": 4,
+    "image": "bodyCare4.jpg",
+    "name": "Sandal Soap",
+    "price": "149",
+    "stars": 4.1,
+    "category": "bodyCare"
+  },
+  {
+    "id": 5,
+    "image": "bodyCare5.jpg",
+    "name": "Body Wash",
+    "price": "249",
+    "stars": 4.1,
+    "category": "bodyCare"
+  },
+  {
+    "id": 6,
+    "image": "bodyCare6.jpg",
+    "name": "Soap Combo",
+    "price": "279",
+    "stars": 4.1,
+    "category": "bodyCare"
+  },
+  {
+    "id": 7,
+    "image": "bodyCare7.jpg",
+    "name": "Soap Pack of 3",
+    "price": "349",
+    "stars": 4.1,
+    "category": "bodyCare"
   }
 ]
