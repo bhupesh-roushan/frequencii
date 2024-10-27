@@ -8,22 +8,14 @@ import {
   CardFooter,
 } from "../../components/ui/card";
 
-import mobiles from "../../data/mobiles.json";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../../components/ui/button";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setMobilesProducts } from "../../redux/MobilesProductSlice";
 import imageMap from "../../pages/imageMap";
 
 function Mobiles() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setMobilesProducts(mobiles));
-  }, [dispatch]);
-
+  const mobiles = topProducts.filter(product => product.category === "mobiles");
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
     e.preventDefault();
@@ -39,7 +31,7 @@ function Mobiles() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {mobiles.map((product) => (
           <Link
-            to={`/mobiles/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >

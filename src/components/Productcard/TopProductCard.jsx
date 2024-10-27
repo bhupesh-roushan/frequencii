@@ -9,7 +9,6 @@ import {
   CardFooter,
 } from "../ui/card";
 
-// Import all images
 import imageMap from "../../pages/imageMap";
 import { addToCart } from "../../redux/CartSlice";
 import { useDispatch } from "react-redux";

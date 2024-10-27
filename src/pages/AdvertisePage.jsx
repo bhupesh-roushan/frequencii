@@ -49,10 +49,10 @@ function AdvertisePage() {
 
     emailjs
       .send(
-        serviceID2, // Your EmailJS service ID
-        templateID2, // Your EmailJS template ID
-        templateParams, // Parameters to include
-        publicKey // Your EmailJS public key
+        serviceID2, 
+        templateID2, 
+        templateParams, 
+        publicKey 
       )
       .then((response) => {
         setResponseMessage("Message sent successfully!"); // Set success message

@@ -8,17 +8,6 @@ import Modal from "./Modal";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import { setSearchTerm } from "../redux/ProductSlice";
-import { setBodyCareSearchTerm } from "../redux/BodyCareProductSlice";
-import frequencii from "../assets/images/frequencii.svg";
-import { setDeodrantsSearchTerm } from "../redux/DeodrantsProductSlice";
-import { setHairCareSearchTerm } from "../redux/HairCareProductSlice";
-import { setHomeGoodsSearchTerm } from "../redux/HomeGoodsProductSlice";
-import { setKidsSearchTerm } from "../redux/KidsProductSlice";
-import { setLaptopsSearchTerm } from "../redux/LaptopsProductSlice";
-import { setMenSearchTerm } from "../redux/MenProductSlice";
-import { setMobilesSearchTerm } from "../redux/MobilesProductSlice";
-import { setWomenSearchTerm } from "../redux/WomenProductSlice";
-
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
@@ -31,15 +20,6 @@ const Navbar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     dispatch(setSearchTerm(search));
-    dispatch(setBodyCareSearchTerm(search));
-    dispatch(setDeodrantsSearchTerm(search))
-    dispatch(setHairCareSearchTerm(search))
-    dispatch(setHomeGoodsSearchTerm(search))
-    dispatch(setKidsSearchTerm(search))
-    dispatch(setLaptopsSearchTerm(search))
-    dispatch(setMenSearchTerm(search))
-    dispatch(setMobilesSearchTerm(search))
-    dispatch(setWomenSearchTerm(search))
     navigate("/filter-data");
   };
   
@@ -63,7 +43,7 @@ const Navbar = () => {
           <Link to="/">
             <img
               className=" hover:scale-105 transition-all ease-in delay-120 min-w-[50px] w-[60px]  mr-5 ml-5 sm:w-[80px] md:w-[90px] lg:w-[100px]"
-              src={frequencii}
+              src={"../../src/assets/images/frequencii.svg"}
               alt="Flora & Fauna"
             />
           </Link>

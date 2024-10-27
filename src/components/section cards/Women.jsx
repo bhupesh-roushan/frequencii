@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import {
   Card,
   CardHeader,
@@ -7,21 +8,15 @@ import {
   CardContent,
   CardFooter,
 } from "../../components/ui/card";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../../components/ui/button";
-import women from "../../data/women.json";
 import imageMap from "../../pages/imageMap";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setWomenProducts } from "../../redux/WomenProductSlice";
 
 function Women() {
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setWomenProducts(women));
-  }, [dispatch]);
+  const women = topProducts.filter(product => product.category === "women");
 
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
@@ -38,14 +33,14 @@ function Women() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {women.map((product) => (
           <Link
-            to={`/women/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >
             <Card className="shadow-md shadow-blue-200 m-5">
               <CardHeader>
                 <img
-                  src={imageMap[product.image]} // Use the image map
+                  src={imageMap[product.image]}
                   alt={product.name}
                   className="w-full h-48 object-cover rounded-lg shadow-sm shadow-blue-200"
                 />

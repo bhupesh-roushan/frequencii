@@ -3,6 +3,7 @@
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AboutPage from "./pages/AboutPage";
 
 // Pages
 import Home from "./pages/Home";
@@ -28,15 +29,7 @@ import HairCare from "./components/section cards/HairCare";
 import Deodrants from "./components/section cards/Deodrants";
 
 // Product Details
-import MenProductDetails from "./ProductDetails/MenProductDetails";
-import WomenProductDetails from "./ProductDetails/WomenProductDetails.jsx";
-import KidsProductDetails from "./ProductDetails/KidsProductDetails";
-import MobilesProductDetails from "./ProductDetails/MobilesProductDetails";
-import LaptopsProductDetails from "./ProductDetails/LaptopsProductDetails";
-import HomeGoodsProductDetails from "./ProductDetails/HomeGoodsProductDetails";
-import BodyCareProductDetails from "./ProductDetails/BodyCareProductDetails";
-import HairCareProductDetails from "./ProductDetails/HairCareProductDetails";
-import DeodrantsProductDetails from "./ProductDetails/DeodrantsProductDetails";
+
 
 // Export all components as a single object
 export default {
@@ -61,13 +54,5 @@ export default {
   BodyCare,
   HairCare,
   Deodrants,
-  MenProductDetails,
-  WomenProductDetails,
-  KidsProductDetails,
-  MobilesProductDetails,
-  LaptopsProductDetails,
-  HomeGoodsProductDetails,
-  BodyCareProductDetails,
-  HairCareProductDetails,
-  DeodrantsProductDetails,
+  AboutPage
 };

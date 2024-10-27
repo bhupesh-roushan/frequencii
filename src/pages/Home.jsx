@@ -24,7 +24,6 @@ const Home = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.product);
 
-  const plugin = React.useRef(Autoplay({ delay: 2000 }));
 
   useEffect(() => {
     dispatch(setProducts(topProducts));

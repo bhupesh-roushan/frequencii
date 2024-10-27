@@ -8,22 +8,15 @@ import {
   CardFooter,
 } from "../ui/card";
 
-import hairCare from "../../data/hairCare.json";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../ui/button";
 import imageMap from "../../pages/imageMap";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setHairCareProducts } from "../../redux/HairCareProductSlice";
 
 function HairCare() {
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setHairCareProducts(hairCare));
-  }, [dispatch]);
-
+  const hairCare = topProducts.filter(product => product.category === "hairCare");
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
     e.preventDefault();
@@ -39,7 +32,7 @@ function HairCare() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {hairCare.map((product) => (
           <Link
-            to={`/hairCare/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >

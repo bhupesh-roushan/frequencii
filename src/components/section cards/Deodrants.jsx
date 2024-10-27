@@ -8,22 +8,14 @@ import {
   CardFooter,
 } from "../ui/card";
 
-import deodrants from "../../data/deodrants.json";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../ui/button";
 import imageMap from "../../pages/imageMap";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setDeodrantsProducts } from "../../redux/DeodrantsProductSlice";
 
 function Deodrants() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setDeodrantsProducts(deodrants));
-  }, [dispatch]);
-
+  const deodrants = topProducts.filter(product => product.category === "deodrants");
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
     e.preventDefault();
@@ -39,7 +31,7 @@ function Deodrants() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {deodrants.map((product) => (
           <Link
-            to={`/deodrants/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >
@@ -74,3 +66,4 @@ function Deodrants() {
 }
 
 export default Deodrants;
+

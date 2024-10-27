@@ -8,21 +8,15 @@ import {
   CardFooter,
 } from "../../components/ui/card";
 
-import kids from "../../data/kids.json";
+import topProducts from "../../data/topProducts.json";
 import imageMap from "../../pages/imageMap";
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setKidsProducts } from "../../redux/KidsProductSlice";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 function Kids() {
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setKidsProducts(kids));
-  }, [dispatch]);
+  const kids = topProducts.filter(product => product.category === "kids");
 
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
@@ -30,6 +24,8 @@ function Kids() {
     dispatch(addToCart(product));
     alert("Product Added");
   };
+
+  
 
   return (
     <div className="container mx-auto p-10">
@@ -39,7 +35,7 @@ function Kids() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {kids.map((product) => (
           <Link
-            to={`/kids/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >

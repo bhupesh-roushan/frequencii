@@ -8,21 +8,16 @@ import {
   CardFooter,
 } from "../../components/ui/card";
 
-import laptops from "../../data/laptops.json";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../../components/ui/button";
 import imageMap from "../../pages/imageMap";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setLaptopsProducts } from "../../redux/LaptopsProductSlice";
+import { Link } from "react-router-dom";
 
 function Laptops() {
+  const laptops = topProducts.filter(product => product.category === "laptops");
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setLaptopsProducts(laptops));
-  }, [dispatch]);
 
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
@@ -39,7 +34,7 @@ function Laptops() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {laptops.map((product) => (
           <Link
-            to={`/laptops/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -8,22 +8,14 @@ import {
   CardFooter,
 } from "../ui/card";
 
-import bodyCare from "../../data/bodyCare.json";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../ui/button";
 import imageMap from "../../pages/imageMap";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setBodyCareProducts } from "../../redux/BodyCareProductSlice";
 
 function BodyCare() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setBodyCareProducts(bodyCare));
-  }, [dispatch]);
-
+  const bodyCare = topProducts.filter(product => product.category === "bodyCare");
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
     e.preventDefault();
@@ -32,6 +24,7 @@ function BodyCare() {
   };
 
   return (
+    
     <div className="container mx-auto p-10">
       <h1 className="text-4xl font-bold mb-6 text-center gradient-title">
         Body Care Collection
@@ -39,7 +32,7 @@ function BodyCare() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {bodyCare.map((product) => (
           <Link
-            to={`/bodyCare/product/${product.id}`}
+            to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >

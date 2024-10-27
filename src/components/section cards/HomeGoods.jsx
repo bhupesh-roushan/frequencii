@@ -8,22 +8,16 @@ import {
   CardFooter,
 } from "../ui/card";
 
-import homeGoods from "../../data/homeGoods.json";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../ui/button";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setHomeGoodsProducts } from "../../redux/HomeGoodsProductSlice";
 import imageMap from "../../pages/imageMap";
 
 function HomeGoods() {
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setHomeGoodsProducts(homeGoods));
-  }, [dispatch]);
 
+  const homeGoods = topProducts.filter(product => product.category === "homeGoods");
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
     e.preventDefault();
@@ -39,7 +33,7 @@ function HomeGoods() {
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {homeGoods.map((product) => (
           <Link
-            to={`/homeGoods/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >

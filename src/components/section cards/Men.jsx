@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useDispatch } from "react-redux";
+
 import {
   Card,
   CardHeader,
@@ -7,22 +9,17 @@ import {
   CardContent,
   CardFooter,
 } from "../../components/ui/card";
-
-import men from "../../data/men.json";
+import topProducts from "../../data/topProducts.json";
 import { Button } from "../../components/ui/button";
 import imageMap from "../../pages/imageMap";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/CartSlice";
-import { setMenProducts } from "../../redux/MenProductSlice";
 
 function Men() {
+
+  const menProducts = topProducts.filter(product => product.category === "men");
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    // Set men products in Redux store
-    dispatch(setMenProducts(men));
-  }, [dispatch]);
 
   const handleAddToCart = (e, product) => {
     e.stopPropagation();
@@ -30,6 +27,7 @@ function Men() {
     dispatch(addToCart(product));
     alert("Product Added");
   };
+  
 
   return (
     <div className="container mx-auto p-10">
@@ -37,9 +35,9 @@ function Men() {
         Men's Collection
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-        {men.map((product) => (
+        {menProducts.map((product) => (
           <Link
-            to={`/men/product/${product.id}`}
+          to={`/${product.category}/product/${product.id}`}
             key={product.id}
             className="w-full h-full"
           >
