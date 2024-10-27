@@ -1,633 +1,717 @@
 [
-  {
-    "id": 1,
-    "image": "product1.jpg",
-    "name": "Wireless Earbuds",
-    "price": "2,999",
-    "stars": 4.5,
-    "category": "topProducts"
-  },
-  {
-    "id": 2,
-    "image": "product2.jpg",
-    "name": "Smart Watch",
-    "price": "4,599",
-    "stars": 4.2,
-    "category": "topProducts"
-  },
-  {
-    "id": 3,
-    "image": "product3.jpg",
-    "name": "Bluetooth Speaker",
-    "price": "1,899",
-    "stars": 4.0,
-    "category": "topProducts"
-  },
-  {
-    "id": 4,
-    "image": "product4.jpg",
-    "name": "Gaming Mouse",
-    "price": "1,199",
-    "stars": 4.3,
-    "category": "topProducts"
-  },
-  {
-    "id": 5,
-    "image": "product5.jpg",
-    "name": "Portable Charger",
-    "price": "999",
-    "stars": 4.1,
-    "category": "topProducts"
-  },
-  {
-    "id": 6,
-    "image": "product6.jpg",
-    "name": "Fitness Tracker",
-    "price": "3,499",
-    "stars": 4.7,
-    "category": "topProducts"
-  },
-  {
-    "id": 7,
-    "image": "product7.jpg",
-    "name": "Table Clock",
-    "price": "899",
-    "stars": 4.0,
-    "category": "topProducts"
-  },
-  {
-    "id": 8,
-    "image": "product8.jpg",
-    "name": "T-shirt",
-    "price": "1,499",
-    "stars": 4.4,
-    "category": "topProducts"
-  },
-  {
-    "id": 9,
-    "image": "product9.jpg",
-    "name": "Wireless Keyboard",
-    "price": "2,299",
-    "stars": 4.6,
-    "category": "topProducts"
-  },
-  {
-    "id": 10,
-    "image": "product10.jpg",
-    "name": "Jeans",
-    "price": "5,199",
-    "stars": 4.8,
-    "category": "topProducts"
-  },
-  {
-    "id": 11,
-    "image": "deodrants1.jpg",
-    "name": "Classic Perfume Deodrant",
-    "price": "899",
-    "stars": 4.8,
-    "category": "deodrants"
-  },
-  {
-    "id": 12,
-    "image": "deodrants2.jpg",
-    "name": "Musk Perfume Deodrant",
-    "price": "1299",
-    "stars": 4.6,
-    "category": "deodrants"
-  },
-  {
-    "id": 13,
-    "image": "deodrants3.jpg",
-    "name": "Amber Perfume Deodrant",
-    "price": "1699",
-    "stars": 4.7,
-    "category": "deodrants"
-  },
-  {
-    "id": 14,
-    "image": "deodrants4.jpg",
-    "name": "Smoky Perfume Deodrant",
-    "price": "1149",
-    "stars": 4.1,
-    "category": "deodrants"
-  },
-  {
-    "id": 15,
-    "image": "deodrants5.jpg",
-    "name": "Intense Perfume Deodrant",
-    "price": "2249",
-    "stars": 4.1,
-    "category": "deodrants"
-  },{
-    "id": 16,
-    "image": "hairCare1.jpg",
-    "name": "Hair Shampoo",
-    "price": "349",
-    "stars": 4.8,
-    "category": "hairCare"
-  },
-  {
-    "id": 17,
-    "image": "hairCare2.jpg",
-    "name": "Jojoba Oil 200ml",
-    "price": "299",
-    "stars": 4.6,
-    "category": "hairCare"
-  },
-  {
-    "id": 18,
-    "image": "hairCare3.jpg",
-    "name": "Coconut Oil 300ml",
-    "price": "199",
-    "stars": 4.7,
-    "category": "hairCare"
-  },
-  {
-    "id": 19,
-    "image": "hairCare4.jpg",
-    "name": "Hair Conditioner",
-    "price": "349",
-    "stars": 4.1,
-    "category": "hairCare"
-  },
-  {
-    "id": 20,
-    "image": "hairCare5.jpg",
-    "name": "Shampoo & Conditioner Combo",
-    "price": "599",
-    "stars": 4.1,
-    "category": "hairCare"
-  },
-  {
-    "id": 21,
-    "image": "homeGoods1.jpg",
-    "name": "Night Lamp",
-    "price": "1999",
-    "stars": 4.8,
-    "category": "homeGoods"
-  },
-  {
-    "id": 22,
-    "image": "homeGoods2.jpg",
-    "name": "Decor Glass",
-    "price": "699",
-    "stars": 4.6,
-    "category": "homeGoods"
-  },
-  {
-    "id": 23,
-    "image": "homeGoods3.jpg",
-    "name": "Frequencii TV 43",
-    "price": "24399",
-    "stars": 4.7,
-    "category": "homeGoods"
-  },
-  {
-    "id": 24,
-    "image": "homeGoods4.jpg",
-    "name": "Frequencii Fridge",
-    "price": "14499",
-    "stars": 4.1,
-    "category": "homeGoods"
-  },
-  {
-    "id": 21,
-    "image": "kids1.jpg",
-    "name": "Boys Jeans",
-    "price": "1399",
-    "stars": 4.5,
-    "category": "kids"
-  },
-  {
-    "id": 26,
-    "image": "kids2.jpg",
-    "name": "Girls Jeans",
-    "price": "1499",
-    "stars": 4.2,
-    "category": "kids"
-  },
-  {
-    "id": 27,
-    "image": "kids3.jpg",
-    "name": "Boys Olive T-Shirt",
-    "price": "399",
-    "stars": 4.6,
-    "category": "kids"
-  },
-  {
-    "id": 28,
-    "image": "kids4.jpg",
-    "name": "Girls Pink T-Shirt",
-    "price": "499",
-    "stars": 4.8,
-    "category": "kids"
-  },
-  {
-    "id": 29,
-    "image": "kids5.jpg",
-    "name": "Girls Shoe",
-    "price": "1299",
-    "stars": 4.3,
-    "category": "kids"
-  },
-  {
-    "id": 30,
-    "image": "kids6.jpg",
-    "name": "Boys White Shoe",
-    "price": "2199",
-    "stars": 4.5,
-    "category": "kids"
-  },
-  {
-    "id": 31,
-    "image": "laptops1.jpg",
-    "name": "MacBook Air",
-    "price": "76999",
-    "stars": 4.8,
-    "category": "laptops"
-  },
-  {
-    "id": 32,
-    "image": "laptops2.jpg",
-    "name": "MacBook Pro 13",
-    "price": "84499",
-    "stars": 4.6,
-    "category": "laptops"
-  },
-  {
-    "id": 33,
-    "image": "laptops3.jpg",
-    "name": "MacBook Pro 16",
-    "price": "94399",
-    "stars": 4.7,
-    "category": "laptops"
-  },
-  {
-    "id": 34,
-    "image": "laptops4.jpg",
-    "name": "Windows i7",
-    "price": "44499",
-    "stars": 4.1,
-    "category": "laptops"
-  },
-  {
-    "id": 35,
-    "image": "men1.jpg",
-    "name": "Checked Shirt",
-    "price": "1299",
-    "stars": 4.5,
-    "category": "men"
-  },
-  {
-    "id": 36,
-    "image": "men2.jpg",
-    "name": "Casual Shoe",
-    "price": "4999",
-    "stars": 4.2,
-    "category": "men"
-  },
-  {
-    "id": 37,
-    "image": "men3.jpg",
-    "name": "Formal Shoe",
-    "price": "3499",
-    "stars": 4.6,
-    "category": "men"
-  },
-  {
-    "id": 38,
-    "image": "men4.jpg",
-    "name": "Casual Short",
-    "price": "1499",
-    "stars": 4.8,
-    "category": "men"
-  },
-  {
-    "id": 39,
-    "image": "men5.jpg",
-    "name": "Running Shoes",
-    "price": "3599",
-    "stars": 4.3,
-    "category": "men"
-  },
-  {
-    "id": 40,
-    "image": "men6.jpg",
-    "name": "Red Checked Shirt",
-    "price": "1999",
-    "stars": 4.5,
-    "category": "men"
-  },
-  {
-    "id": 41,
-    "image": "men7.jpg",
-    "name": "Blue Jeans",
-    "price": "3199",
-    "stars": 4.7,
-    "category": "men"
-  },
-  {
-    "id": 42,
-    "image": "men8.jpg",
-    "name": "Black T-Shirt",
-    "price": "1199",
-    "stars": 4.4,
-    "category": "men"
-  },
-  {
-    "id": 43,
-    "image": "men9.jpg",
-    "name": "White T-Shirt",
-    "price": "1199",
-    "stars": 4.1,
-    "category": "men"
-  },
-  {
-    "id": 44,
-    "image": "men10.jpg",
-    "name": "Yellow T-Shirt",
-    "price": "1199",
-    "stars": 4.6,
-    "category": "men"
-  },
-  {
-    "id": 45,
-    "image": "men11.jpg",
-    "name": "Causal Jacket",
-    "price": "4999",
-    "stars": 4.3,
-    "category": "men"
-  },
-  {
-    "id": 46,
-    "image": "men12.jpg",
-    "name": "Running Shoe",
-    "price": "4499",
-    "stars": 4.2,
-    "category": "men"
-  },
-  {
-    "id": 47,
-    "image": "mobiles1.jpg",
-    "name": "Android 1",
-    "price": "16999",
-    "stars": 4.5,
-    "category": "mobiles"
-  },
-  {
-    "id": 48,
-    "image": "mobiles2.jpg",
-    "name": "Iphone 14 Blue",
-    "price": "44499",
-    "stars": 4.2,
-    "category": "mobiles"
-  },
-  {
-    "id": 49,
-    "image": "mobiles3.jpg",
-    "name": "Iphone 14 Pink",
-    "price": "44399",
-    "stars": 4.6,
-    "category": "mobiles"
-  },
-  {
-    "id": 50,
-    "image": "mobiles4.jpg",
-    "name": "Iphone 15 Blue",
-    "price": "54499",
-    "stars": 4.8,
-    "category": "mobiles"
-  },
-  {
-    "id": 51,
-    "image": "women1.jpg",
-    "name": "Blue Jeans",
-    "price": "1499",
-    "stars": 4.5,
-    "category": "women"
-  },
-  {
-    "id": 52,
-    "image": "women2.jpg",
-    "name": "Floral Top",
-    "price": "899",
-    "stars": 4.2,
-    "category": "women"
-  },
-  {
-    "id": 53,
-    "image": "women3.jpg",
-    "name": "Printed T-Shirt",
-    "price": "699",
-    "stars": 4.6,
-    "category": "women"
-  },
-  {
-    "id": 54,
-    "image": "women4.jpg",
-    "name": "Casual Floral Top",
-    "price": "599",
-    "stars": 4.8,
-    "category": "women"
-  },
-  {
-    "id": 55,
-    "image": "women5.jpg",
-    "name": "Black Heels",
-    "price": "1299",
-    "stars": 4.3,
-    "category": "women"
-  },
-  {
-    "id": 56,
-    "image": "women6.jpg",
-    "name": "White Heels",
-    "price": "1199",
-    "stars": 4.5,
-    "category": "women"
-  },
-  {
-    "id": 57,
-    "image": "women7.jpg",
-    "name": "Grey Floral Dress",
-    "price": "2199",
-    "stars": 4.7,
-    "category": "women"
-  },
-  {
-    "id": 58,
-    "image": "women8.jpg",
-    "name": "White&Blue Dress",
-    "price": "1899",
-    "stars": 4.4,
-    "category": "women"
-  },
-  {
-    "id": 59,
-    "image": "women9.jpg",
-    "name": "Casual Hoodie",
-    "price": "1799",
-    "stars": 4.1,
-    "category": "women"
-  },
-  {
-    "id": 60,
-    "image": "women10.jpg",
-    "name": "Casual Bomber Jacket",
-    "price": "2999",
-    "stars": 4.6,
-    "category": "women"
-  },
-  {
-    "id": 61,
-    "image": "women11.jpg",
-    "name": "Leather Jacket",
-    "price": "4799",
-    "stars": 4.3,
-    "category": "women"
-  },
-  {
-    "id": 62,
-    "image": "women12.jpg",
-    "name": "Sports Shoe",
-    "price": "2499",
-    "stars": 4.2,
-    "category": "women"
-  },
-  {
-    "id": 63,
-    "image": "women13.jpg",
-    "name": "Casual Shoe",
-    "price": "2299",
-    "stars": 4.4,
-    "category": "women"
-  },
-  {
-    "id": 64,
-    "image": "women14.jpg",
-    "name": "Leather Boot",
-    "price": "3499",
-    "stars": 4.5,
-    "category": "women"
-  },
-  {
-    "id": 65,
-    "image": "women15.jpg",
-    "name": "Casual Flip Flop",
-    "price": "599",
-    "stars": 4.6,
-    "category": "women"
-  },
-  {
-    "id": 66,
-    "image": "women16.jpg",
-    "name": "Slipper",
-    "price": "499",
-    "stars": 4.7,
-    "category": "women"
-  },
-  {
-    "id": 67,
-    "image": "women17.jpg",
-    "name": "Casual Slide",
-    "price": "899",
-    "stars": 4.3,
-    "category": "women"
-  },
-  {
-    "id": 68,
-    "image": "women18.jpg",
-    "name": "Blue Crop Top",
-    "price": "599",
-    "stars": 4.5,
-    "category": "women"
-  },
-  {
-    "id": 69,
-    "image": "women19.jpg",
-    "name": "Pink T-Shirt",
-    "price": "599",
-    "stars": 4.2,
-    "category": "women"
-  },
-  {
-    "id": 70,
-    "image": "women20.jpg",
-    "name": "Lime T-Shirt",
-    "price": "599",
-    "stars": 4.4,
-    "category": "women"
-  },
-  {
-    "id": 71,
-    "image": "women21.jpg",
-    "name": "Red Crop Top",
-    "price": "799",
-    "stars": 4.6,
-    "category": "women"
-  },
-  {
-    "id": 72,
-    "image": "women22.jpg",
-    "name": "Green T-Shirt",
-    "price": "599",
-    "stars": 4.3,
-    "category": "women"
-  },
-  {
-    "id": 73,
-    "image": "bodyCare1.jpg",
-    "name": "Face Cream",
-    "price": "399",
-    "stars": 4.8,
-    "category": "bodyCare"
-  },
-  {
-    "id": 74,
-    "image": "bodyCare2.jpg",
-    "name": "Face Wash",
-    "price": "299",
-    "stars": 4.6,
-    "category": "bodyCare"
-  },
-  {
-    "id": 75,
-    "image": "bodyCare3.jpg",
-    "name": "Moisturizer",
-    "price": "699",
-    "stars": 4.7,
-    "category": "bodyCare"
-  },
-  {
-    "id": 76,
-    "image": "bodyCare4.jpg",
-    "name": "Sandal Soap",
-    "price": "149",
-    "stars": 4.1,
-    "category": "bodyCare"
-  },
-  {
-    "id": 77,
-    "image": "bodyCare5.jpg",
-    "name": "Body Wash",
-    "price": "249",
-    "stars": 4.1,
-    "category": "bodyCare"
-  },
-  {
-    "id": 78,
-    "image": "bodyCare6.jpg",
-    "name": "Soap Combo",
-    "price": "279",
-    "stars": 4.1,
-    "category": "bodyCare"
-  },
-  {
-    "id": 79,
-    "image": "bodyCare7.jpg",
-    "name": "Soap Pack of 3",
-    "price": "349",
-    "stars": 4.1,
-    "category": "bodyCare"
-  }
+  
+    {
+      "id": 1,
+      "image": "product1.jpg",
+      "name": "Wireless Earbuds",
+      "price": "2,999",
+      "stars": 4.5,
+      "category": "topProducts",
+      "description": "Compact and comfortable wireless earbuds with immersive sound quality, noise cancellation, and a long-lasting battery life, perfect for on-the-go music and calls."
+    },
+    {
+      "id": 2,
+      "image": "product2.jpg",
+      "name": "Smart Watch",
+      "price": "4,599",
+      "stars": 4.2,
+      "category": "topProducts",
+      "description": "Stylish smartwatch equipped with fitness tracking, heart rate monitoring, and smartphone notifications, designed to help you stay connected and active."
+    },
+    {
+      "id": 3,
+      "image": "product3.jpg",
+      "name": "Bluetooth Speaker",
+      "price": "1,899",
+      "stars": 4.0,
+      "category": "topProducts",
+      "description": "Portable Bluetooth speaker delivering high-quality, deep bass sound, waterproof design, and long battery life, ideal for indoor and outdoor use."
+    },
+    {
+      "id": 4,
+      "image": "product4.jpg",
+      "name": "Gaming Mouse",
+      "price": "1,199",
+      "stars": 4.3,
+      "category": "topProducts",
+      "description": "Ergonomically designed gaming mouse with customizable RGB lighting, high DPI sensitivity, and responsive controls for an enhanced gaming experience."
+    },
+    {
+      "id": 5,
+      "image": "product5.jpg",
+      "name": "Portable Charger",
+      "price": "999",
+      "stars": 4.1,
+      "category": "topProducts",
+      "description": "High-capacity portable charger with fast charging technology, compact design, and multiple USB ports, ensuring your devices stay powered on the go."
+    },
+    {
+      "id": 6,
+      "image": "product6.jpg",
+      "name": "Fitness Tracker",
+      "price": "3,499",
+      "stars": 4.7,
+      "category": "topProducts",
+      "description": "Advanced fitness tracker with heart rate monitor, sleep tracking, and activity tracking, helping you achieve your health and fitness goals."
+    },
+    {
+      "id": 7,
+      "image": "product7.jpg",
+      "name": "Table Clock",
+      "price": "899",
+      "stars": 4.0,
+      "category": "topProducts",
+      "description": "Elegant table clock with a classic design and clear display, adding a timeless touch to your home or office decor."
+    },
+    {
+      "id": 8,
+      "image": "product8.jpg",
+      "name": "T-shirt",
+      "price": "1,499",
+      "stars": 4.4,
+      "category": "topProducts",
+      "description": "Premium quality T-shirt crafted from soft, breathable fabric, offering a comfortable and stylish fit for everyday wear."
+    },
+    {
+      "id": 9,
+      "image": "product9.jpg",
+      "name": "Wireless Keyboard",
+      "price": "2,299",
+      "stars": 4.6,
+      "category": "topProducts",
+      "description": "Sleek wireless keyboard with ergonomic design, quiet keys, and reliable connectivity, perfect for an efficient and clutter-free workspace."
+    },
+    {
+      "id": 10,
+      "image": "product10.jpg",
+      "name": "Jeans",
+      "price": "5,199",
+      "stars": 4.8,
+      "category": "topProducts",
+      "description": "Stylish and durable jeans made from high-quality denim, offering a comfortable fit and versatile style suitable for any occasion."
+    },
+    {
+      "id": 11,
+      "image": "deodrants1.jpg",
+      "name": "Classic Perfume Deodorant",
+      "price": "899",
+      "stars": 4.8,
+      "category": "deodrants",
+      "description": "Sophisticated perfume deodorant with a classic fragrance, providing long-lasting freshness and elegance for all-day confidence."
+    },
+    {
+      "id": 12,
+      "image": "deodrants2.jpg",
+      "name": "Musk Perfume Deodorant",
+      "price": "1,299",
+      "stars": 4.6,
+      "category": "deodrants",
+      "description": "Warm and inviting musk-scented deodorant, offering a luxurious, long-lasting fragrance that keeps you feeling fresh and confident."
+    },
+    {
+      "id": 13,
+      "image": "deodrants3.jpg",
+      "name": "Amber Perfume Deodorant",
+      "price": "1,699",
+      "stars": 4.7,
+      "category": "deodrants",
+      "description": "Rich amber fragrance in a convenient deodorant form, combining elegance and freshness for a scent that lasts all day."
+    },
+    {
+      "id": 14,
+      "image": "deodrants4.jpg",
+      "name": "Smoky Perfume Deodorant",
+      "price": "1,149",
+      "stars": 4.1,
+      "category": "deodrants",
+      "description": "Distinctive smoky perfume deodorant, blending a bold, warm scent with all-day freshness for a unique, lasting impression."
+    },
+    {
+      "id": 15,
+      "image": "deodrants5.jpg",
+      "name": "Intense Perfume Deodorant",
+      "price": "2,249",
+      "stars": 4.1,
+      "category": "deodrants",
+      "description": "Intense, captivating perfume deodorant with a bold fragrance, designed for those who seek a long-lasting and striking scent."
+    },
+    {
+      "id": 16,
+      "image": "hairCare1.jpg",
+      "name": "Hair Shampoo",
+      "price": "349",
+      "stars": 4.8,
+      "category": "hairCare",
+      "description": "Nourishing hair shampoo that gently cleanses and revitalizes, leaving your hair soft, shiny, and healthy-looking after every wash."
+    },
+    {
+      "id": 17,
+      "image": "hairCare2.jpg",
+      "name": "Jojoba Oil 200ml",
+      "price": "299",
+      "stars": 4.6,
+      "category": "hairCare",
+      "description": "Pure jojoba oil known for its moisturizing properties, promoting hair health, shine, and strength, ideal for regular use."
+    },
+    {
+      "id": 18,
+      "image": "hairCare3.jpg",
+      "name": "Coconut Oil 300ml",
+      "price": "199",
+      "stars": 4.7,
+      "category": "hairCare",
+      "description": "Natural coconut oil with nourishing properties, perfect for hair and skin care, adding moisture, shine, and strength."
+    },
+    {
+      "id": 19,
+      "image": "hairCare4.jpg",
+      "name": "Hair Conditioner",
+      "price": "349",
+      "stars": 4.1,
+      "category": "hairCare",
+      "description": "Moisturizing hair conditioner that provides deep hydration, detangles, and leaves hair feeling smooth, shiny, and healthy."
+    },
+    {
+      "id": 20,
+      "image": "hairCare5.jpg",
+      "name": "Shampoo & Conditioner Combo",
+      "price": "599",
+      "stars": 4.1,
+      "category": "hairCare",
+      "description": "Complete hair care combo pack with shampoo and conditioner, delivering nourishment and hydration for soft, manageable hair."
+    },
+    {
+      "id": 21,
+      "image": "homeGoods1.jpg",
+      "name": "Night Lamp",
+      "price": "1,999",
+      "stars": 4.8,
+      "category": "homeGoods",
+      "description": "Stylish night lamp with adjustable brightness and energy-efficient LED lighting, adding a warm ambiance to any room."
+    },
+    {
+      "id": 22,
+      "image": "homeGoods2.jpg",
+      "name": "Decor Glass",
+      "price": "699",
+      "stars": 4.6,
+      "category": "homeGoods",
+      "description": "Elegant decor glass with a beautiful design, perfect for adding a touch of sophistication to your home or office."
+    },
+    {
+      "id": 23,
+      "image": "homeGoods3.jpg",
+      "name": "Frequencii TV 43",
+      "price": "24,399",
+      "stars": 4.7,
+      "category": "homeGoods",
+      "description": "High-definition 43-inch smart TV with vivid picture quality, advanced streaming capabilities, and a sleek design for modern living rooms."
+    },
+    {
+      "id": 24,
+      "image": "homeGoods4.jpg",
+      "name": "Frequencii Fridge",
+      "price": "14,499",
+      "stars": 4.1,
+      "category": "homeGoods",
+      "description": "Compact and efficient fridge with ample storage space, energy-saving technology, and a modern design, ideal for any kitchen."
+    },
+      {
+        "id": 25,
+        "image": "kids1.jpg",
+        "name": "Boys Jeans",
+        "price": "1399",
+        "stars": 4.5,
+        "category": "kids",
+        "description": "Comfortable and durable jeans designed for active boys, featuring a stylish cut and soft denim fabric."
+      },
+      {
+        "id": 26,
+        "image": "kids2.jpg",
+        "name": "Girls Jeans",
+        "price": "1499",
+        "stars": 4.2,
+        "category": "kids",
+        "description": "Trendy jeans for girls with a comfortable fit and a high-quality fabric that offers both style and durability."
+      },
+      {
+        "id": 27,
+        "image": "kids3.jpg",
+        "name": "Boys Olive T-Shirt",
+        "price": "399",
+        "stars": 4.6,
+        "category": "kids",
+        "description": "Soft cotton t-shirt in olive green, perfect for casual outings and playtime for active boys."
+      },
+      {
+        "id": 28,
+        "image": "kids4.jpg",
+        "name": "Girls Pink T-Shirt",
+        "price": "499",
+        "stars": 4.8,
+        "category": "kids",
+        "description": "Bright pink t-shirt made of breathable fabric, ideal for girls who love stylish comfort."
+      },
+      {
+        "id": 29,
+        "image": "kids5.jpg",
+        "name": "Girls Shoe",
+        "price": "1299",
+        "stars": 4.3,
+        "category": "kids",
+        "description": "Fashionable and comfortable shoes for girls, with a cushioned sole for all-day wear."
+      },
+      {
+        "id": 30,
+        "image": "kids6.jpg",
+        "name": "Boys White Shoe",
+        "price": "2199",
+        "stars": 4.5,
+        "category": "kids",
+        "description": "Stylish white shoes for boys, featuring durable material and cushioned support for active play."
+      },
+      {
+        "id": 31,
+        "image": "laptops1.jpg",
+        "name": "MacBook Air",
+        "price": "76999",
+        "stars": 4.8,
+        "category": "laptops",
+        "description": "Lightweight and powerful, the MacBook Air is ideal for students and professionals, featuring an M1 chip and Retina display."
+      },
+      {
+        "id": 32,
+        "image": "laptops2.jpg",
+        "name": "MacBook Pro 13",
+        "price": "84499",
+        "stars": 4.6,
+        "category": "laptops",
+        "description": "High-performance laptop with an M1 chip, perfect for intensive tasks with advanced graphics and long battery life."
+      },
+      {
+        "id": 33,
+        "image": "laptops3.jpg",
+        "name": "MacBook Pro 16",
+        "price": "94399",
+        "stars": 4.7,
+        "category": "laptops",
+        "description": "Professional-grade laptop with a larger display and enhanced graphics, ideal for creative and professional use."
+      },
+      {
+        "id": 34,
+        "image": "laptops4.jpg",
+        "name": "Windows i7",
+        "price": "44499",
+        "stars": 4.1,
+        "category": "laptops",
+        "description": "Efficient Windows laptop powered by an Intel i7 processor, suitable for work, gaming, and everyday use."
+      },
+      {
+        "id": 35,
+        "image": "men1.jpg",
+        "name": "Checked Shirt",
+        "price": "1299",
+        "stars": 4.5,
+        "category": "men",
+        "description": "Classic checked shirt with a comfortable fit, perfect for both casual and formal occasions."
+      },
+      {
+        "id": 36,
+        "image": "men2.jpg",
+        "name": "Casual Shoe",
+        "price": "4999",
+        "stars": 4.2,
+        "category": "men",
+        "description": "Stylish and durable casual shoes, ideal for everyday wear with a cushioned sole for extra comfort."
+      },
+      {
+        "id": 37,
+        "image": "men3.jpg",
+        "name": "Formal Shoe",
+        "price": "3499",
+        "stars": 4.6,
+        "category": "men",
+        "description": "Elegant formal shoes crafted with premium materials, designed for style and comfort at work."
+      },
+      {
+        "id": 38,
+        "image": "men4.jpg",
+        "name": "Casual Short",
+        "price": "1499",
+        "stars": 4.8,
+        "category": "men",
+        "description": "Comfortable casual shorts, perfect for summer outings, made from breathable fabric."
+      },
+      {
+        "id": 39,
+        "image": "men5.jpg",
+        "name": "Running Shoes",
+        "price": "3599",
+        "stars": 4.3,
+        "category": "men",
+        "description": "Lightweight running shoes designed for performance and comfort during workouts."
+      },
+      {
+        "id": 40,
+        "image": "men6.jpg",
+        "name": "Red Checked Shirt",
+        "price": "1999",
+        "stars": 4.5,
+        "category": "men",
+        "description": "Trendy red checked shirt with a modern fit, perfect for casual occasions."
+      },
+      {
+        "id": 41,
+        "image": "men7.jpg",
+        "name": "Blue Jeans",
+        "price": "3199",
+        "stars": 4.7,
+        "category": "men",
+        "description": "Classic blue jeans with a comfortable and stylish fit, suitable for daily wear."
+      },
+      {
+        "id": 42,
+        "image": "men8.jpg",
+        "name": "Black T-Shirt",
+        "price": "1199",
+        "stars": 4.4,
+        "category": "men",
+        "description": "Essential black t-shirt made from soft cotton, ideal for layering or wearing solo."
+      },
+      {
+        "id": 43,
+        "image": "men9.jpg",
+        "name": "White T-Shirt",
+        "price": "1199",
+        "stars": 4.1,
+        "category": "men",
+        "description": "Simple and comfortable white t-shirt, a staple for any wardrobe."
+      },
+      {
+        "id": 44,
+        "image": "men10.jpg",
+        "name": "Yellow T-Shirt",
+        "price": "1199",
+        "stars": 4.6,
+        "category": "men",
+        "description": "Vibrant yellow t-shirt made from quality fabric, perfect for casual outings."
+      },
+      {
+        "id": 45,
+        "image": "men11.jpg",
+        "name": "Casual Jacket",
+        "price": "4999",
+        "stars": 4.3,
+        "category": "men",
+        "description": "Stylish casual jacket that provides warmth and adds a touch of style to any outfit."
+      },
+      {
+        "id": 46,
+        "image": "men12.jpg",
+        "name": "Running Shoe",
+        "price": "4499",
+        "stars": 4.2,
+        "category": "men",
+        "description": "Durable running shoes with excellent grip and support, designed for all terrains."
+      },
+      {
+        "id": 47,
+        "image": "mobiles1.jpg",
+        "name": "Android 1",
+        "price": "16999",
+        "stars": 4.5,
+        "category": "mobiles",
+        "description": "Affordable Android smartphone with a powerful processor, ideal for everyday use and multitasking."
+      },
+      {
+        "id": 48,
+        "image": "mobiles2.jpg",
+        "name": "iPhone 14 Blue",
+        "price": "44499",
+        "stars": 4.2,
+        "category": "mobiles",
+        "description": "Elegant iPhone 14 in blue, featuring a powerful chip, high-quality camera, and premium design."
+      },
+      {
+        "id": 49,
+        "image": "mobiles3.jpg",
+        "name": "iPhone 14 Pink",
+        "price": "44399",
+        "stars": 4.6,
+        "category": "mobiles",
+        "description": "Stylish iPhone 14 in pink, equipped with advanced features and an improved camera system."
+      },
+      {
+        "id": 50,
+        "image": "mobiles4.jpg",
+        "name": "iPhone 15 Blue",
+        "price": "54499",
+        "stars": 4.8,
+        "category": "mobiles",
+        "description": "The latest iPhone 15 in blue, offering top-notch performance, a high-quality camera, and cutting-edge features."
+      },
+    
+        {
+          "id": 51,
+          "image": "women1.jpg",
+          "name": "Blue Jeans",
+          "price": "1499",
+          "stars": 4.5,
+          "category": "women",
+          "description": "Stylish and comfortable blue jeans that pair well with any top for a casual look."
+        },
+        {
+          "id": 52,
+          "image": "women2.jpg",
+          "name": "Floral Top",
+          "price": "899",
+          "stars": 4.2,
+          "category": "women",
+          "description": "A lightweight floral top perfect for summer outings, bringing a touch of nature to your wardrobe."
+        },
+        {
+          "id": 53,
+          "image": "women3.jpg",
+          "name": "Printed T-Shirt",
+          "price": "699",
+          "stars": 4.6,
+          "category": "women",
+          "description": "Casual printed t-shirt made from soft cotton, ideal for everyday wear."
+        },
+        {
+          "id": 54,
+          "image": "women4.jpg",
+          "name": "Casual Floral Top",
+          "price": "599",
+          "stars": 4.8,
+          "category": "women",
+          "description": "A relaxed-fit floral top that adds a feminine touch to any casual outfit."
+        },
+        {
+          "id": 55,
+          "image": "women5.jpg",
+          "name": "Black Heels",
+          "price": "1299",
+          "stars": 4.3,
+          "category": "women",
+          "description": "Elegant black heels that elevate your look for any formal or semi-formal occasion."
+        },
+        {
+          "id": 56,
+          "image": "women6.jpg",
+          "name": "White Heels",
+          "price": "1199",
+          "stars": 4.5,
+          "category": "women",
+          "description": "Chic white heels that add a fresh and modern vibe to your outfit."
+        },
+        {
+          "id": 57,
+          "image": "women7.jpg",
+          "name": "Grey Floral Dress",
+          "price": "2199",
+          "stars": 4.7,
+          "category": "women",
+          "description": "A beautiful grey floral dress that flatters your silhouette, perfect for various occasions."
+        },
+        {
+          "id": 58,
+          "image": "women8.jpg",
+          "name": "White&Blue Dress",
+          "price": "1899",
+          "stars": 4.4,
+          "category": "women",
+          "description": "A stunning white and blue dress that combines elegance with comfort for a stylish appearance."
+        },
+        {
+          "id": 59,
+          "image": "women9.jpg",
+          "name": "Casual Hoodie",
+          "price": "1799",
+          "stars": 4.1,
+          "category": "women",
+          "description": "A cozy casual hoodie that's perfect for chilly days and laid-back weekends."
+        },
+        {
+          "id": 60,
+          "image": "women10.jpg",
+          "name": "Casual Bomber Jacket",
+          "price": "2999",
+          "stars": 4.6,
+          "category": "women",
+          "description": "Trendy bomber jacket that adds an edgy flair to your casual outfits."
+        },
+        {
+          "id": 61,
+          "image": "women11.jpg",
+          "name": "Leather Jacket",
+          "price": "4799",
+          "stars": 4.3,
+          "category": "women",
+          "description": "Classic leather jacket that enhances your style and offers durability and warmth."
+        },
+        {
+          "id": 62,
+          "image": "women12.jpg",
+          "name": "Sports Shoe",
+          "price": "2499",
+          "stars": 4.2,
+          "category": "women",
+          "description": "High-performance sports shoes designed for comfort and support during workouts."
+        },
+        {
+          "id": 63,
+          "image": "women13.jpg",
+          "name": "Casual Shoe",
+          "price": "2299",
+          "stars": 4.4,
+          "category": "women",
+          "description": "Versatile casual shoes perfect for everyday wear and light activities."
+        },
+        {
+          "id": 64,
+          "image": "women14.jpg",
+          "name": "Leather Boot",
+          "price": "3499",
+          "stars": 4.5,
+          "category": "women",
+          "description": "Stylish leather boots that provide both comfort and a fashionable edge to your winter wardrobe."
+        },
+        {
+          "id": 65,
+          "image": "women15.jpg",
+          "name": "Casual Flip Flop",
+          "price": "599",
+          "stars": 4.6,
+          "category": "women",
+          "description": "Lightweight and comfortable flip flops ideal for beach days or casual outings."
+        },
+        {
+          "id": 66,
+          "image": "women16.jpg",
+          "name": "Slipper",
+          "price": "499",
+          "stars": 4.7,
+          "category": "women",
+          "description": "Cozy slippers designed for indoor comfort, perfect for lounging around the house."
+        },
+        {
+          "id": 67,
+          "image": "women17.jpg",
+          "name": "Casual Slide",
+          "price": "899",
+          "stars": 4.3,
+          "category": "women",
+          "description": "Easy-to-wear casual slides that offer comfort and style for any casual occasion."
+        },
+        {
+          "id": 68,
+          "image": "women18.jpg",
+          "name": "Blue Crop Top",
+          "price": "599",
+          "stars": 4.5,
+          "category": "women",
+          "description": "Trendy blue crop top that pairs well with high-waisted bottoms for a stylish summer look."
+        },
+        {
+          "id": 69,
+          "image": "women19.jpg",
+          "name": "Pink T-Shirt",
+          "price": "599",
+          "stars": 4.2,
+          "category": "women",
+          "description": "Soft pink t-shirt that's perfect for casual outings or lounging at home."
+        },
+        {
+          "id": 70,
+          "image": "women20.jpg",
+          "name": "Lime T-Shirt",
+          "price": "599",
+          "stars": 4.4,
+          "category": "women",
+          "description": "Bright lime t-shirt that adds a pop of color to your wardrobe, suitable for everyday wear."
+        },
+        {
+          "id": 71,
+          "image": "women21.jpg",
+          "name": "Red Crop Top",
+          "price": "799",
+          "stars": 4.6,
+          "category": "women",
+          "description": "Bold red crop top that makes a statement, ideal for pairing with skirts or shorts."
+        },
+        {
+          "id": 72,
+          "image": "women22.jpg",
+          "name": "Green T-Shirt",
+          "price": "599",
+          "stars": 4.3,
+          "category": "women",
+          "description": "Classic green t-shirt that is versatile and perfect for layering or wearing alone."
+        },
+        {
+          "id": 73,
+          "image": "bodyCare1.jpg",
+          "name": "Face Cream",
+          "price": "399",
+          "stars": 4.8,
+          "category": "bodyCare",
+          "description": "Nourishing face cream that hydrates and rejuvenates your skin for a radiant look."
+        },
+        {
+          "id": 74,
+          "image": "bodyCare2.jpg",
+          "name": "Face Wash",
+          "price": "299",
+          "stars": 4.6,
+          "category": "bodyCare",
+          "description": "Gentle face wash that removes impurities and keeps your skin fresh and clean."
+        },
+        {
+          "id": 75,
+          "image": "bodyCare3.jpg",
+          "name": "Moisturizer",
+          "price": "699",
+          "stars": 4.7,
+          "category": "bodyCare",
+          "description": "Rich moisturizer that provides deep hydration, leaving your skin soft and supple."
+        },
+        {
+          "id": 76,
+          "image": "bodyCare4.jpg",
+          "name": "Sandal Soap",
+          "price": "149",
+          "stars": 4.1,
+          "category": "bodyCare",
+          "description": "Refreshing sandal soap that cleanses while imparting a soothing fragrance."
+        },
+        {
+          "id": 77,
+          "image": "bodyCare5.jpg",
+          "name": "Body Wash",
+          "price": "249",
+          "stars": 4.1,
+          "category": "bodyCare",
+          "description": "Luxurious body wash that cleanses and moisturizes your skin, leaving it soft and fragrant."
+        },
+        {
+          "id": 78,
+          "image": "bodyCare6.jpg",
+          "name": "Soap Combo",
+          "price": "279",
+          "stars": 4.1,
+          "category": "bodyCare",
+          "description": "Combination of scented soaps that provide an indulgent cleansing experience."
+        },
+        {
+          "id": 79,
+          "image": "bodyCare7.jpg",
+          "name": "Body Lotion",
+          "price": "499",
+          "stars": 4.6,
+          "category": "bodyCare",
+          "description": "Hydrating body lotion that absorbs quickly, leaving your skin smooth and nourished."
+        }
+      
+      
 ]

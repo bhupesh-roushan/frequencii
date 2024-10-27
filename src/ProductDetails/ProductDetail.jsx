@@ -49,6 +49,12 @@ const ProductDetail = () => {
               <p className="font-semibold text-sm sm:text-xl">
                 Rating: {product.stars} ⭐
               </p>
+
+
+              <p className="font-normal text-sm text-center sm:text-xl">
+                {product.description} 
+              </p>
+              
               <Button
                 variant="outline"
                 className="shadow-md w-[100px] sm:w-full mt-5 shadow-blue-200"

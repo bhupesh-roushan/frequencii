@@ -6,8 +6,8 @@ import { Button } from "./ui/button";
 const Login = ({ openSignUpForm }) => {
   return (
     <div className="m-5 shadow-lg shadow-blue-200 p-5 rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">Login</h2>
-      <form action="">
+      <h2 className="text-2xl font-bold mb-4 text-center gradient-title">Login</h2>
+      <form className="p-5">
         <div className="mb-4">
           <Label htmlFor="" className="block text-gray-700 pb-2">
             Email
@@ -43,7 +43,7 @@ const Login = ({ openSignUpForm }) => {
           <Button
             variant="outline"
             type="submit"
-            className="w-full bg-red-600 text-white py-2 "
+            className="w-full shadow-md shadow-blue-200 py-2 "
           >
             Login
           </Button>
@@ -53,7 +53,7 @@ const Login = ({ openSignUpForm }) => {
       <div className="text-center">
         <span className="text-gray-700">Don't have an Account?</span>
         <Button
-          variant="destructive"
+          variant="outline"
           className="ml-2 shadow-md shadow-blue-200"
           onClick={openSignUpForm}
         >
