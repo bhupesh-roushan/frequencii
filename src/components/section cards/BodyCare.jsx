@@ -41,10 +41,10 @@ function BodyCare() {
                 <img
                   src={imageMap[product.image]}
                   alt={product.name}
-                  className="w-full h-48 object-cover rounded-lg shadow-sm shadow-blue-200"
+                  className="w-full mb-6 h-48 object-cover rounded-lg shadow-sm shadow-blue-200"
                 />
                 <CardTitle>{product.name}</CardTitle>
-                <CardDescription>Price: ₹{product.price}</CardDescription>
+                <CardDescription className="text-md font-medium pt-2">Price: ₹{product.price}</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm">Rating: {product.stars} ⭐</p>
