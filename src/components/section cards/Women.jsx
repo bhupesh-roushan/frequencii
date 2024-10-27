@@ -28,7 +28,7 @@ function Women() {
   return (
     <div className="container mx-auto p-10">
       <h1 className="text-4xl font-bold mb-6 text-center gradient-title">
-        Men's Collection
+        Women's Collection
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {women.map((product) => (

@@ -1,12 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppImport from "./AppImport";
 import { useState } from "react";
+import ScrollToTop from "./components/ScrollTop";
 
 function App() {
   const [order, setOrder] = useState(null);
   return (
     <BrowserRouter>
       <AppImport.Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/about" element={<AppImport.AboutPage />} />
         <Route path="/" element={<AppImport.Home />} />
