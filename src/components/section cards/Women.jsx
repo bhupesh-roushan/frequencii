@@ -30,7 +30,7 @@ function Women() {
       <h1 className="text-4xl font-bold mb-6 text-center gradient-title">
         Women's Collection
       </h1>
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {women.map((product) => (
           <Link
           to={`/${product.category}/product/${product.id}`}
